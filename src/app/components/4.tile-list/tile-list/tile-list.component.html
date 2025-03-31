@@ -1,0 +1,16 @@
+<div class="container">
+  @for (tile of tileNames() ; track $index){
+  <div class="item">
+    <app-tile-list-plain-tile [tileName]="tile"></app-tile-list-plain-tile>
+  </div>
+  }
+</div>
+<!--
+- has padding left and right
+- is a container where content flows z-like
+- may have padding top and bottom
+- has 12px gap
+
+
+
+-->

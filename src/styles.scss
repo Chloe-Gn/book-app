@@ -1,1 +1,118 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+// reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+a {
+  all: unset;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-moz-search-clear-button,
+input[type="search"]::-ms-clear {
+  display: none;
+}
+
+// colors
+$color-primary-100: #f2fdfd;
+$color-primary-200: #c7f4f4;
+$color-primary-300: #52d8da;
+$color-primary-400: #2bbfc4;
+$color-primary-500: #25a7a5;
+$color-primary-600: #1c9288;
+$color-primary-700: #19766d;
+$color-primary-800: #115a55;
+$color-primary-900: #0b4140;
+
+$color-accent-900: #22002e;
+$color-accent-800: #45025f;
+$color-accent-700: #5c0ba2;
+$color-accent-600: #9219c2;
+$color-accent-500: #af1ae6;
+$color-accent-400: #d16af6;
+$color-accent-300: #e39ff9;
+$color-accent-200: #f1cffc;
+$color-accent-100: #fdf5ff;
+
+$color-grey-900: #222931;
+$color-grey-800: #4c5c6b;
+$color-grey-700: #6c8093;
+$color-grey-600: #8896a5;
+$color-grey-500: #aeb7c1;
+$color-grey-400: #d0d6dd;
+$color-grey-300: #eaedf0;
+$color-grey-200: #f6f7f9;
+$color-grey-100: #fcfcfd;
+
+body {
+  font-family: sans-serif;
+  min-width: 320px;
+  max-width: 414px;
+  margin: auto;
+  background-color: $color-grey-100;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// font face
+
+$sans-serif: "sans-serif";
+
+$font-regular: "assets/fonts/inter-regular.woff2";
+$font-medium: "assets/fonts/inter-medium.woff2";
+$font-semibold: "assets/fonts/inter-semibold.woff2";
+$font-bold: "assets/fonts/inter-bold.woff2";
+$font-black: "assets/fonts/inter-black.woff2";
+
+@font-face {
+  font-family: "Inter regular";
+  src: url(#{$font-regular}) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter medium";
+  src: url(#{$font-medium}) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter semibold";
+  src: url(#{$font-semibold}) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter bold";
+  src: url(#{$font-bold}) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter black";
+  src: url(#{$font-black}) format("woff2");
+  font-display: swap;
+}
+
+// spacing

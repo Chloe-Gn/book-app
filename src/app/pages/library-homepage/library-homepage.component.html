@@ -1,6 +1,10 @@
 <app-top-bar [title]="title"></app-top-bar>
-<app-tile-list [tileNames]="tileNames">
-  <app-tile-list-plain-tile></app-tile-list-plain-tile>
+<app-tile-list [tileObjects]="tileObjects">
+  @for (tileObject of tileObjects; track tileObject.id) {
+  <app-tile-list-plain-tile
+    [tileObject]="tileObject"
+  ></app-tile-list-plain-tile>
+  }
 </app-tile-list>
 
 <app-nav-bar></app-nav-bar>

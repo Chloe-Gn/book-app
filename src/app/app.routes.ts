@@ -11,4 +11,8 @@ export const routes: Routes = [
     path: 'editorial-selection',
     component: EditorialSelectionComponent,
   },
+  {
+    path: ':category',
+    component: EditorialSelectionComponent,
+  },
 ];

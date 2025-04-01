@@ -1,12 +1,23 @@
-import { Component, input } from '@angular/core';
+import { Component, input, InputSignal, OnInit, Signal } from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
+import { Category } from '../../../models/category.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tile-list-plain-tile',
-  imports: [TitleCasePipe],
+  imports: [TitleCasePipe, RouterLink],
   templateUrl: './tile-list-plain-tile.component.html',
   styleUrl: './tile-list-plain-tile.component.scss',
 })
-export class TileListPlainTileComponent {
-  tileName = input<string>();
+export class TileListPlainTileComponent implements OnInit {
+  tileObject = input<Category | undefined>();
+  tileName: string = '';
+  category: string = '';
+  categoryId: number = 0;
+
+  ngOnInit(): void {
+    this.tileName = this.tileObject()!.categoryName;
+    this.category = this.tileObject()!.path;
+    this.categoryId = this.tileObject()!.id;
+  }
 }

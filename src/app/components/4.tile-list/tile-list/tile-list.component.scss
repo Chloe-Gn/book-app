@@ -8,12 +8,3 @@
   gap: 12px;
   padding-bottom: 124px;
 }
-
-.item {
-  flex-grow: 1;
-  flex-basis: calc(50% - 12px);
-}
-
-.item:hover {
-  cursor: pointer;
-}

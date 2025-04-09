@@ -2,7 +2,7 @@
 @import "../../../../styles.scss";
 
 //constant - not dependable on state
-:host {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;

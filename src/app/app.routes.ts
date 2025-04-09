@@ -21,7 +21,7 @@ export const routes: Routes = [
     component: CategoryPageComponent,
   },
   {
-    path: '',
+    path: 'bibliotheque',
     component: LibraryHomepageComponent,
   },
 ];

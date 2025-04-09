@@ -19,7 +19,7 @@ import { Category } from '../../models/category.model';
 })
 export class LibraryHomepageComponent implements OnInit {
   constructor(private mockCategoryService: MockCategoryService) {}
-
+  title: string = 'bibliothèque';
   tileObjects: Category[] = [];
 
   ngOnInit(): void {

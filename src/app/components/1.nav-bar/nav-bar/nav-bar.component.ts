@@ -5,7 +5,7 @@ import {
   ICON_BOOK_OUTLINE,
   ICON_SEARCH,
 } from '../../../../assets/icons/svg-paths/svg-paths';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',

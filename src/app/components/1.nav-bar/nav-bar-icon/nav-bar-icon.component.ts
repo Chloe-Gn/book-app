@@ -1,6 +1,7 @@
 import { Component, input, output } from '@angular/core';
 import { ICON_BOOK_OUTLINE } from '../../../../assets/icons/svg-paths/svg-paths';
 import { NgClass } from '@angular/common';
+import { RouterLinkActive } from '@angular/router';
 
 //parent = navBar
 // c'est le parent qui passe :
@@ -13,7 +14,7 @@ import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar-icon',
-  imports: [NgClass],
+  imports: [NgClass, RouterLinkActive],
   templateUrl: './nav-bar-icon.component.html',
   styleUrl: './nav-bar-icon.component.scss',
 })

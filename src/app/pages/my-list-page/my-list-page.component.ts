@@ -9,5 +9,5 @@ import { TopBarComponent } from '../../components/2.top-bar/top-bar/top-bar.comp
   styleUrl: './my-list-page.component.scss',
 })
 export class MyListPageComponent {
-  myListTitle: string = 'Ma liste';
+  title: string = 'Ma liste';
 }

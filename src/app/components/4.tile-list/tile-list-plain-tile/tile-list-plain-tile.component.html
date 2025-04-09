@@ -1,4 +1,4 @@
 <!-- <div class="tile">{{ tileName() | titlecase }}</div> -->
-<a [routerLink]="'categorie/' + category" class="tile">{{
+<a [routerLink]="category" [state]="{ title: tileName }" class="tile">{{
   tileName | titlecase
 }}</a>

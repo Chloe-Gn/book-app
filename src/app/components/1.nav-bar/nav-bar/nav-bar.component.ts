@@ -1,31 +1,16 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { NavBarIconComponent } from '../nav-bar-icon/nav-bar-icon.component';
 import {
   ICON_AVATAR_LIST_OUTLINE,
   ICON_BOOK_OUTLINE,
   ICON_SEARCH,
 } from '../../../../assets/icons/svg-paths/svg-paths';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [NavBarIconComponent],
-  template: `<div class="container">
-    <app-nav-bar-icon
-      [label]="'Bibliothèque'"
-      [icon]="bookIcon"
-      [destination]="''"
-    ></app-nav-bar-icon>
-    <app-nav-bar-icon
-      [label]="'Recherche'"
-      [icon]="magnifyingGlassIcon"
-      [destination]="''"
-    ></app-nav-bar-icon>
-    <app-nav-bar-icon
-      [label]="'Ma liste'"
-      [icon]="myListIcon"
-      [destination]="''"
-    ></app-nav-bar-icon>
-  </div>`,
+  imports: [NavBarIconComponent, RouterLink],
+  templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss',
 })
 export class NavBarComponent {

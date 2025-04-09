@@ -1,4 +1,11 @@
-import { Component, input, InputSignal, OnInit, Signal } from '@angular/core';
+import {
+  Component,
+  input,
+  InputSignal,
+  OnInit,
+  output,
+  Signal,
+} from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
 import { Category } from '../../../models/category.model';
 import { RouterLink } from '@angular/router';

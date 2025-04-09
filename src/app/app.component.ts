@@ -1,19 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { MockCategoryService } from './services/categoryService/mock-category.service';
-import { EditorialSelectionComponent } from './pages/editorial-selection/editorial-selection.component';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { TopBarComponent } from './components/2.top-bar/top-bar/top-bar.component';
+import { NavBarComponent } from './components/1.nav-bar/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
-  template: `<router-outlet />`,
+  imports: [RouterOutlet, RouterLink, TopBarComponent, NavBarComponent],
+  templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'book_app';
-
-  constructor(
-    private mockCategoryService: MockCategoryService,
-    private router: Router
-  ) {}
 }

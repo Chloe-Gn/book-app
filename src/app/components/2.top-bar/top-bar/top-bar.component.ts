@@ -1,5 +1,17 @@
-import { Component, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  DoCheck,
+  inject,
+  input,
+  InputSignal,
+  OnChanges,
+  OnInit,
+  Signal,
+  SimpleChanges,
+} from '@angular/core';
 import { UpperCasePipe } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -8,5 +20,5 @@ import { UpperCasePipe } from '@angular/common';
   styleUrl: './top-bar.component.scss',
 })
 export class TopBarComponent {
-  title = input('');
+  title = input<string>();
 }

@@ -1,23 +1,11 @@
-<div>
-  <a (click)="toggleActive($event)" class="icon-group" [href]="destination()">
-    <svg
-      class="svg-selector"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <!-- path variable -->
-      <!-- class active/not active depends on user action -->
-      <path
-        [attr.d]="icon()"
-        [ngClass]="{ 'icon-path': true, active: isActive, inactive: !isActive }"
-      />
-    </svg>
-    <!-- label variable -->
-    <!-- ajouter aussi un lien variable -->
-    <div
-      [ngClass]="{ 'icon-label': true, active: isActive, inactive: !isActive }"
-    >
-      {{ label() }}
-    </div>
-  </a>
+<svg
+  class="svg-selector"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path [attr.d]="icon()" class="icon-path" />
+</svg>
+
+<div class="icon-label">
+  {{ label() }}
 </div>

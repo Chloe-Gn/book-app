@@ -20,25 +20,9 @@ import { Category } from '../../models/category.model';
 export class LibraryHomepageComponent implements OnInit {
   constructor(private mockCategoryService: MockCategoryService) {}
 
-  title: string = 'Bibliothèque';
   tileObjects: Category[] = [];
 
   ngOnInit(): void {
     this.tileObjects = this.mockCategoryService.getCategories();
   }
-
-  /*
-  tileNames: string[] = [
-    'nouveautés',
-    'romans',
-    'thrillers',
-    'bandes dessinées',
-    'romans graphiques',
-    'essais',
-    'non fiction',
-    'biographies',
-    'manuels scolaires',
-    'religions',
-  ];
-  */
 }

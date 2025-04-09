@@ -1,1 +1,20 @@
-<p>nav-bar works!</p>
+<div class="container">
+  <app-nav-bar-icon
+    [label]="'Bibliothèque'"
+    [icon]="bookIcon"
+    [routerLink]="''"
+    routerLinkActive="active"
+  ></app-nav-bar-icon>
+  <app-nav-bar-icon
+    [label]="'Recherche'"
+    [icon]="magnifyingGlassIcon"
+    [routerLink]="'/recherche'"
+    routerLinkActive="active"
+  ></app-nav-bar-icon>
+  <app-nav-bar-icon
+    [label]="'Ma liste'"
+    [icon]="myListIcon"
+    [routerLink]="'/ma-liste'"
+    routerLinkActive="active"
+  ></app-nav-bar-icon>
+</div>

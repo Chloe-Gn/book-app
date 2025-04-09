@@ -10,6 +10,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './tile-list.component.scss',
 })
 export class TileLIstComponent {
-  tileNames = input<string[]>();
   tileObjects = input<Category[]>();
 }

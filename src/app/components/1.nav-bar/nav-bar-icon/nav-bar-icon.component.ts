@@ -18,16 +18,17 @@ import { NgClass } from '@angular/common';
   styleUrl: './nav-bar-icon.component.scss',
 })
 export class NavBarIconComponent {
+  /*
   isActive = false;
 
-  toggleActive(event: Event): void {
-    event.preventDefault();
-    this.isActive = !this.isActive;
+  toggleActive(isActive: boolean): void {
+    this.isActive = isActive;
+    console.log('isActive yo');
   }
 
-  //reçoit tous ceux là du parent
+  */
 
   label = input('');
   icon = input('');
-  destination = input('');
+  routerLinkActive = input('');
 }

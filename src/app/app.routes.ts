@@ -1,19 +1,27 @@
 import { Routes } from '@angular/router';
 import { LibraryHomepageComponent } from './pages/library-homepage/library-homepage.component';
-import { EditorialSelectionComponent } from './pages/editorial-selection/editorial-selection.component';
-import { BookPageComponent } from './pages/book-page/book-page.component';
 
+import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { MyListPageComponent } from './pages/my-list-page/my-list-page.component';
+import { CategoryPageComponent } from './pages/category-page/category-page.component';
+
+//The order of routes is important because
+//the Router uses a first-match wins strategy when matching routes
 export const routes: Routes = [
   {
-    path: '',
-    component: LibraryHomepageComponent,
+    path: 'recherche',
+    component: SearchPageComponent,
   },
   {
-    path: 'editorial-selection',
-    component: EditorialSelectionComponent,
+    path: 'ma-liste',
+    component: MyListPageComponent,
   },
   {
     path: 'categorie/:category',
-    component: EditorialSelectionComponent,
+    component: CategoryPageComponent,
+  },
+  {
+    path: '',
+    component: LibraryHomepageComponent,
   },
 ];

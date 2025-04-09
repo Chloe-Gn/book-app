@@ -2,7 +2,7 @@
 @import "../../../../styles.scss";
 
 //constant - not dependable on state
-.icon-group {
+:host {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,23 +25,23 @@
 
 //changing - state-related
 
-.icon-group:hover {
+:host:hover {
   cursor: pointer;
 }
 
-.icon-path.active {
+.active .icon-path {
   fill: $color-primary-400;
 }
 
-.icon-path.inactive {
+.icon-path {
   fill: $color-primary-700;
 }
 
-.icon-label.active {
+.active .icon-label {
   color: $color-primary-600;
 }
 
-.icon-label.inactive {
+.icon-label {
   color: $color-primary-800;
 }
 

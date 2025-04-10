@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NavBarComponent } from '../../components/1.nav-bar/nav-bar/nav-bar.component';
-import { TopBarComponent } from '../../components/2.top-bar/top-bar/top-bar.component';
-import { TileLIstComponent } from '../../components/4.tile-list/tile-list/tile-list.component';
-import { TileListPlainTileComponent } from '../../components/4.tile-list/tile-list-plain-tile/tile-list-plain-tile.component';
+import { NavBarComponent } from '../../components/nav-bar/nav-bar/nav-bar.component';
+import { TopBarComponent } from '../../components/top-bar/top-bar/top-bar.component';
+import { TileLIstComponent } from '../../components/tile-list/tile-list/tile-list.component';
+import { TileListPlainTileComponent } from '../../components/tile-list/tile-list-plain-tile/tile-list-plain-tile.component';
 import { MockCategoryService } from '../../services/categoryService/mock-category.service';
 import { Category } from '../../models/category.model';
 

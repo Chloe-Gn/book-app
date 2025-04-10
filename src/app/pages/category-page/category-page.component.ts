@@ -1,12 +1,14 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { TopBarComponent } from '../../components/2.top-bar/top-bar/top-bar.component';
-import { NavBarComponent } from '../../components/1.nav-bar/nav-bar/nav-bar.component';
+import { TopBarComponent } from '../../components/top-bar/top-bar/top-bar.component';
+import { NavBarComponent } from '../../components/nav-bar/nav-bar/nav-bar.component';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { TopBarBackButtonComponent } from '../../components/2.top-bar/top-bar-back-button/top-bar-back-button.component';
+import { TopBarBackButtonComponent } from '../../components/top-bar/top-bar-back-button/top-bar-back-button.component';
+import { FilterSortBarComponent } from '../../components/filter-sort-bar/filter-sort-bar/filter-sort-bar.component';
 
 @Component({
   selector: 'app-category-page',
   imports: [
+    FilterSortBarComponent,
     TopBarComponent,
     NavBarComponent,
     RouterLink,

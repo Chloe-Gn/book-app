@@ -1,0 +1,17 @@
+@import "../../../../styles.scss";
+//constant
+
+.container {
+  height: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $color-grey-100;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter regular";
+  font-size: 16px;
+  line-height: 24px;
+}

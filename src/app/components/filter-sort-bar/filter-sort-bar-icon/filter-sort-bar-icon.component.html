@@ -1,0 +1,13 @@
+<div class="container" [ngStyle]="{ gap: gap() }">
+  <svg
+    class="svg-selector"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path [attr.d]="icon()" class="icon-path" />
+  </svg>
+
+  <div class="icon-label">
+    {{ label() }}
+  </div>
+</div>

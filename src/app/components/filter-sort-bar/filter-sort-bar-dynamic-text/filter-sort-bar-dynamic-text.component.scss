@@ -1,0 +1,10 @@
+@import "../../../../styles.scss";
+
+//constant - not dependable on state
+:host {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $color-grey-500;
+  gap: 6px;
+}

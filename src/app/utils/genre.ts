@@ -7,7 +7,9 @@ export enum Genre {
   Romance = 'romance',
   Thriller = 'policier',
   Historical = 'historique',
-  Biography = 'biographe',
+  Biography = 'biographie',
   SelfHelp = 'développement personnel',
   Horror = 'horreur',
+  PoliticalScience = 'sciences politiques',
+  Economics = 'économie',
 }

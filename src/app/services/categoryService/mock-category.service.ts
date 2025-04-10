@@ -9,52 +9,52 @@ export class MockCategoryService {
     {
       id: 1,
       categoryName: 'nouveautés',
-      path: '/categorie/nouveautes',
+      path: '/bibliotheque/nouveautes',
     },
     {
       id: 2,
       categoryName: 'romans',
-      path: '/categorie/romans',
+      path: '/bibliotheque/romans',
     },
     {
       id: 3,
       categoryName: 'thrillers',
-      path: '/categorie/thrillers',
+      path: '/bibliotheque/thrillers',
     },
     {
       id: 4,
       categoryName: 'bandes dessinées',
-      path: '/categorie/bandes-dessinees',
+      path: '/bibliotheque/bandes-dessinees',
     },
     {
       id: 5,
       categoryName: 'romans graphiques',
-      path: '/categorie/romans-graphiques',
+      path: '/bibliotheque/romans-graphiques',
     },
     {
       id: 6,
       categoryName: 'essais',
-      path: '/categorie/essais',
+      path: '/bibliotheque/essais',
     },
     {
       id: 7,
       categoryName: 'non fiction',
-      path: '/categorie/non-fiction',
+      path: '/bibliotheque/non-fiction',
     },
     {
       id: 8,
       categoryName: 'biographies',
-      path: '/categorie/biographies',
+      path: '/bibliotheque/biographies',
     },
     {
       id: 9,
       categoryName: 'manuels scolaires',
-      path: '/categorie/manuels-scolaires',
+      path: '/bibliotheque/manuels-scolaires',
     },
     {
       id: 10,
       categoryName: 'religions',
-      path: '/categorie/religions',
+      path: '/bibliotheque/religions',
     },
   ];
 

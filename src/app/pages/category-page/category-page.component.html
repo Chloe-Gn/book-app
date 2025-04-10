@@ -4,7 +4,8 @@
 <app-filter-sort-bar></app-filter-sort-bar>
 <app-spacer [height]="'32px'"></app-spacer>
 <app-horizontal-list-card>
-  <app-horizontal-list-card> </app-horizontal-list-card>
+  @for (bookObject of books; track bookObject.id) {
+  <app-horizontal-card [book]="bookObject"> </app-horizontal-card>}
 </app-horizontal-list-card>
 
 <app-nav-bar></app-nav-bar>

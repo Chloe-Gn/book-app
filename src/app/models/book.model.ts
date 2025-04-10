@@ -3,9 +3,10 @@ import { BookComment } from './comment.model';
 
 export interface Book {
   id: number;
+  bookImagePath: string;
   title: string;
   authorID: number;
-  auhtorName: string;
+  authorName: string;
   firstPublished: Date;
   averageRating: number;
   genres: Genre[];

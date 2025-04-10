@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: MyListPageComponent,
   },
   {
-    path: 'categorie/:category',
+    path: 'bibliotheque/:category',
     component: CategoryPageComponent,
   },
   {

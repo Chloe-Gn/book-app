@@ -1,1 +1,11 @@
-<p>horizontal-card works!</p>
+<p>{{ authorName }}</p>
+<p>{{ bookTitle }}</p>
+<p>{{ averageRating }}</p>
+<img
+  [src]="bookImage"
+  alt="Image de couverture du livre &quot;{{ bookTitle }}&quot;"
+/>
+@for (categorie of categories; track $index) {
+<p>{{ categorie }}</p>
+}
+<p>{{ publicationDate | date : "longDate" }}</p>

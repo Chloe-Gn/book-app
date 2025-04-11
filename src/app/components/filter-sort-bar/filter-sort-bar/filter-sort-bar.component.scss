@@ -2,10 +2,13 @@
 //constant
 
 .container {
-  height: 24px;
+  height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: $color-grey-100;
+  position: fixed;
+  z-index: 1000;
+  max-width: 414px;
 }
 
 .content-box {

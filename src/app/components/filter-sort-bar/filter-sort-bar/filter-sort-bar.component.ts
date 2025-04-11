@@ -3,10 +3,15 @@ import { FilterSortBarIconComponent } from '../filter-sort-bar-icon/filter-sort-
 import { ICON_FILTER } from '../../../../assets/icons/svg-paths/svg-paths';
 import { ICON_CHOOSE_DISPLAY_OUTLINE } from '../../../../assets/icons/svg-paths/svg-paths';
 import { FilterSortBarDynamicTextComponent } from '../filter-sort-bar-dynamic-text/filter-sort-bar-dynamic-text.component';
+import { SpacerComponent } from '../../spacer/spacer.component';
 
 @Component({
   selector: 'app-filter-sort-bar',
-  imports: [FilterSortBarDynamicTextComponent, FilterSortBarIconComponent],
+  imports: [
+    FilterSortBarDynamicTextComponent,
+    FilterSortBarIconComponent,
+    SpacerComponent,
+  ],
   templateUrl: './filter-sort-bar.component.html',
   styleUrl: './filter-sort-bar.component.scss',
 })

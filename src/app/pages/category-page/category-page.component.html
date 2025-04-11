@@ -1,8 +1,9 @@
 <app-top-bar [title]="title"
   ><app-top-bar-back-button routerLink="/bibliotheque"></app-top-bar-back-button
 ></app-top-bar>
+<app-spacer [height]="'120px'"></app-spacer>
 <app-filter-sort-bar></app-filter-sort-bar>
-<app-spacer [height]="'32px'"></app-spacer>
+<app-spacer [height]="'60px'"></app-spacer>
 <app-horizontal-list-card>
   @for (bookObject of books; track bookObject.id) {
   <app-horizontal-card [book]="bookObject"> </app-horizontal-card>}

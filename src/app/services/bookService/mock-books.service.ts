@@ -13,7 +13,7 @@ export class MockBooksService {
   nonFictionBooks: Book[] = [
     {
       id: 1,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: '1984.jpg',
       title: "Sapiens: Une brève histoire de l'humanité",
       authorID: 1,
       authorName: 'Yuval Noah Harari',
@@ -69,7 +69,7 @@ export class MockBooksService {
     },
     {
       id: 2,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'attrape-coeur.jpg',
       title: 'Le Deuxième Sexe',
       authorID: 2,
       authorName: 'Simone de Beauvoir',
@@ -125,7 +125,7 @@ export class MockBooksService {
     },
     {
       id: 3,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'gatsby.jpg',
       title: 'Une brève histoire de presque tout',
       authorID: 3,
       authorName: 'Bill Bryson',
@@ -182,7 +182,7 @@ export class MockBooksService {
     },
     {
       id: 4,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'seigneur-anneaux-communaute.jpg',
       title: "L'Histoire de la Seconde Guerre mondiale",
       authorID: 4,
       authorName: 'Winston Churchill',
@@ -239,7 +239,7 @@ export class MockBooksService {
     },
     {
       id: 5,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'harry-potter-ecole-sorciers.jpg',
       title: 'La structure des révolutions scientifiques',
       authorID: 5,
       authorName: 'Thomas S. Kuhn',
@@ -296,7 +296,7 @@ export class MockBooksService {
     },
     {
       id: 6,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'hobbit.jpg',
       title: "L'origine des espèces",
       authorID: 6,
       authorName: 'Charles Darwin',
@@ -353,7 +353,7 @@ export class MockBooksService {
     },
     {
       id: 7,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'meilleur des mondes.jpg',
       title: "Les Origines de la famille, de la propriété privée et de l'État",
       authorID: 7,
       authorName: 'Friedrich Engels',
@@ -410,7 +410,7 @@ export class MockBooksService {
     },
     {
       id: 8,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'moby-dick.jpg',
       title: "L'Interprétation des rêves",
       authorID: 8,
       authorName: 'Sigmund Freud',
@@ -466,7 +466,7 @@ export class MockBooksService {
     },
     {
       id: 9,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'oiseau-moqueur.jpg',
       title: "La Genèse de l'idée de l'État",
       authorID: 9,
       authorName: 'Max Weber',
@@ -523,7 +523,7 @@ export class MockBooksService {
     },
     {
       id: 10,
-      bookImagePath: 'book-place-holder.jpg',
+      bookImagePath: 'orgueil-et-prejuges.jpg',
       title: 'La société industrielle et son avenir',
       authorID: 10,
       authorName: 'Antoine Cournot',

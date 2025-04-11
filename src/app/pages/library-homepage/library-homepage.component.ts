@@ -5,6 +5,7 @@ import { TileLIstComponent } from '../../components/tile-list/tile-list/tile-lis
 import { TileListPlainTileComponent } from '../../components/tile-list/tile-list-plain-tile/tile-list-plain-tile.component';
 import { MockCategoryService } from '../../services/categoryService/mock-category.service';
 import { Category } from '../../models/category.model';
+import { SpacerComponent } from '../../components/spacer/spacer.component';
 
 @Component({
   selector: 'app-library-homepage',
@@ -13,6 +14,7 @@ import { Category } from '../../models/category.model';
     NavBarComponent,
     TileLIstComponent,
     TileListPlainTileComponent,
+    SpacerComponent,
   ],
   templateUrl: './library-homepage.component.html',
   styleUrl: './library-homepage.component.scss',

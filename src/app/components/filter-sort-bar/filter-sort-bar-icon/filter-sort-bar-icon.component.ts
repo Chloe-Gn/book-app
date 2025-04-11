@@ -1,5 +1,6 @@
 import { NgStyle } from '@angular/common';
 import { Component, input } from '@angular/core';
+import { SpacerComponent } from '../../spacer/spacer.component';
 
 @Component({
   selector: 'app-filter-sort-bar-icon',

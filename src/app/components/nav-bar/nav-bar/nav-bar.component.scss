@@ -4,11 +4,12 @@
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 40px 10px 40px;
   width: 100%;
   border-top: solid 0.5px $color-grey-300;
   position: fixed;
   z-index: 1000;
   bottom: 0;
+  height: 96px;
   max-width: 414px;
 }

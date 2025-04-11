@@ -1,0 +1,81 @@
+@import "../../../../styles.scss";
+
+//constant - not dependable on state
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: 256px;
+}
+
+.side {
+  width: calc(50% - 6px);
+}
+
+.left {
+  background-color: $color-primary-200;
+  border-radius: 16px;
+}
+
+.right {
+  background-color: $color-grey-100;
+}
+
+.image {
+  height: 168px;
+}
+
+.book-cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(256px - 48px);
+}
+
+.publication-date-container {
+  font-family: "Inter medium";
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-primary-200;
+  background-color: $color-primary-800;
+  height: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.icon-container {
+  position: relative;
+  top: 16px;
+  left: calc(100% - 56px);
+  width: fit-content;
+  height: fit-content;
+}
+
+.icon-stack {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.svg-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.icon-path-outlined {
+  fill: $color-primary-500;
+}
+
+.icon-path-filled {
+  fill: $color-primary-100;
+}

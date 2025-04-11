@@ -2,6 +2,8 @@ import { Component, input, OnInit } from '@angular/core';
 import { Book } from '../../../models/book.model';
 import { Genre } from '../../../utils/genre';
 import { DatePipe } from '@angular/common';
+import { ICON_HEART_OUTLINED } from '../../../../assets/icons/svg-paths/svg-paths';
+import { ICON_HEART_FILLED } from '../../../../assets/icons/svg-paths/svg-paths';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -20,6 +22,8 @@ export class HorizontalCardComponent implements OnInit {
   categories: Genre[] = [];
 
   imageFolder: string = 'assets/images/';
+  heartOutlined: string = ICON_HEART_OUTLINED;
+  heartFilled: string = ICON_HEART_FILLED;
 
   ngOnInit() {
     this.bookId = this.book()!.id;

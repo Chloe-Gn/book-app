@@ -1,11 +1,43 @@
-<p>{{ authorName }}</p>
-<p>{{ bookTitle }}</p>
-<p>{{ averageRating }}</p>
-<img
-  [src]="bookImage"
-  alt="Image de couverture du livre &quot;{{ bookTitle }}&quot;"
-/>
-@for (categorie of categories; track $index) {
-<p>{{ categorie }}</p>
-}
-<p>{{ publicationDate | date : "longDate" }}</p>
+<div class="left side">
+  <div class="icon-container">
+    <div class="icon-stack">
+      <svg
+        class="svg-selector"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path [attr.d]="heartFilled" class="icon-path-filled" />
+      </svg>
+      <svg
+        class="svg-selector"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path [attr.d]="heartOutlined" class="icon-path-outlined" />
+      </svg>
+    </div>
+  </div>
+  <div class="book-cover-container">
+    <img
+      class="image"
+      [src]="bookImage"
+      alt="Image de couverture du livre &quot;{{ bookTitle }}&quot;"
+    />
+  </div>
+  <div class="publication-date-container">
+    <p>Publié en {{ publicationDate | date : "Y" }}</p>
+  </div>
+</div>
+<div class="right side">
+  <h2>{{ bookTitle }}</h2>
+  <div>
+    <p>{{ averageRating }}</p>
+  </div>
+  <p>{{ authorName }}</p>
+
+  @for (categorie of categories; track $index) {
+  <p>{{ categorie }}</p>
+  }
+
+  <button>En savoir plus</button>
+</div>

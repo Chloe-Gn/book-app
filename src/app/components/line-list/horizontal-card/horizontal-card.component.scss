@@ -22,7 +22,7 @@
 }
 
 .image {
-  height: 168px;
+  height: 176px;
 }
 
 .book-cover-container {
@@ -30,7 +30,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   height: calc(256px - 48px);
 }
 
@@ -62,7 +61,7 @@
   height: 40px;
 }
 
-.svg-selector {
+.left .svg-selector {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,10 +71,19 @@
   max-width: 40px;
 }
 
-.icon-path-outlined {
+.heart-icon-path-outlined {
   fill: $color-primary-500;
 }
 
-.icon-path-filled {
+.heart-icon-path-filled {
   fill: $color-primary-100;
+}
+
+.book-title {
+  font-family: "Inter semibold";
+  font-size: 18px;
+  line-height: 25px;
+  color: $color-grey-900;
+  min-height: 25px;
+  max-height: 176px;
 }

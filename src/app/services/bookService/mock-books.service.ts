@@ -18,7 +18,7 @@ export class MockBooksService {
       authorID: 1,
       authorName: 'Yuval Noah Harari',
       firstPublished: new Date('2011-01-01'),
-      averageRating: 4.7,
+      averageRating: 0.7,
       genres: [Genre.NonFiction, Genre.Historical, Genre.Biography],
       comments: [
         {
@@ -130,7 +130,7 @@ export class MockBooksService {
       authorID: 3,
       authorName: 'Bill Bryson',
       firstPublished: new Date('2003-06-01'),
-      averageRating: 4.6,
+      averageRating: 1.6,
       genres: [Genre.NonFiction, Genre.ScienceFiction, Genre.Historical],
       comments: [
         {
@@ -358,7 +358,7 @@ export class MockBooksService {
       authorID: 7,
       authorName: 'Friedrich Engels',
       firstPublished: new Date('1884-01-01'),
-      averageRating: 4.3,
+      averageRating: 2.3,
       genres: [Genre.NonFiction, Genre.Historical, Genre.Biography],
       comments: [
         {

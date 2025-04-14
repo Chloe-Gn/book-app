@@ -1,22 +1,5 @@
 <div class="left side">
-  <div class="icon-container">
-    <div class="icon-stack">
-      <svg
-        class="svg-selector"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path [attr.d]="heartFilled" class="heart-icon-path-filled" />
-      </svg>
-      <svg
-        class="svg-selector"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path [attr.d]="heartOutlined" class="heart-icon-path-outlined" />
-      </svg>
-    </div>
-  </div>
+  <app-like-icon></app-like-icon>
   <div class="book-cover-container">
     <img
       class="image"
@@ -34,10 +17,8 @@
   <app-star-rating [rating]="averageRating"></app-star-rating>
   <app-spacer [height]="'16px'"></app-spacer>
   <p class="authorName">{{ authorName | truncate : 45 }}</p>
-
-  @for (categorie of categories; track $index) {
-  <p>{{ categorie }}</p>
-  }
-
-  <button>En savoir plus</button>
+  <app-spacer [height]="'12px'"></app-spacer>
+  <app-small-chips [chips]="categories"></app-small-chips>
+  <app-spacer [height]="'12px'"></app-spacer>
+  <button class="tertiary-button">En savoir plus ></button>
 </div>

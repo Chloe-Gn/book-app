@@ -1,7 +1,7 @@
 import { Component, input, OnInit } from '@angular/core';
 import { Book } from '../../../models/book.model';
 import { Genre } from '../../../utils/genre';
-import { DatePipe } from '@angular/common';
+import { DatePipe, TitleCasePipe } from '@angular/common';
 import {
   ICON_HEART_OUTLINED,
   ICON_STAR_FILLED,
@@ -13,10 +13,20 @@ import { TruncatePipe } from '../../../pipes/truncate.pipe';
 import { SpacerComponent } from '../../spacer/spacer.component';
 import { RateToStarPipe } from '../../../pipes/rate-to-stars.pipe';
 import { StarRatingComponent } from '../../star-rating/star-rating.component';
+import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
+import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
 
 @Component({
   selector: 'app-horizontal-card',
-  imports: [DatePipe, SpacerComponent, TruncatePipe, StarRatingComponent],
+  imports: [
+    DatePipe,
+    LikeIconComponent,
+    SmallChipsComponent,
+    SpacerComponent,
+    StarRatingComponent,
+    TitleCasePipe,
+    TruncatePipe,
+  ],
   templateUrl: './horizontal-card.component.html',
   styleUrl: './horizontal-card.component.scss',
 })
@@ -31,8 +41,6 @@ export class HorizontalCardComponent implements OnInit {
   categories: Genre[] = [];
 
   imageFolder: string = 'assets/images/';
-  heartOutlined: string = ICON_HEART_OUTLINED;
-  heartFilled: string = ICON_HEART_FILLED;
   starHalfFilled: string = ICON_STAR_HALF_FILLED;
   starFilled: string = ICON_STAR_FILLED;
   starOutlined: string = ICON_STAR_OUTLINED;

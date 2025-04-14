@@ -1,0 +1,18 @@
+<div
+  class="chips-carousel"
+  #carousel
+  (mousedown)="onMouseDown($event)"
+  (mouseup)="onMouseUpOrLeave()"
+  (mouseleave)="onMouseUpOrLeave()"
+  (mousemove)="onMouseMove($event)"
+  (touchstart)="onMouseDown($event)"
+  (touchend)="onMouseUpOrLeave()"
+  (touchmove)="onMouseMove($event)"
+  (wheel)="onWheel($event)"
+>
+  @for (chip of chips(); track $index) {
+  <div class="chip">
+    {{ chip | titlecase }}
+  </div>
+  }
+</div>

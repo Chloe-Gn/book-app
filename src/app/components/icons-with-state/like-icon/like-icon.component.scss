@@ -1,0 +1,34 @@
+@import "../../../../styles.scss";
+
+.heart-icon-path-outlined {
+  fill: $color-primary-500;
+}
+
+.heart-icon-path-filled {
+  fill: $color-primary-100;
+}
+
+.icon-container {
+  position: relative;
+  top: 16px;
+  left: calc(100% - 56px);
+  width: fit-content;
+  height: fit-content;
+}
+
+.icon-stack {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.svg-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 40px;
+  max-width: 40px;
+}

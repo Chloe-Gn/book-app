@@ -86,4 +86,22 @@
   color: $color-grey-900;
   min-height: 25px;
   max-height: 176px;
+  line-clamp: 3;
+}
+
+.authorName {
+  font-family: "Inter regular";
+  font-size: 16px;
+  line-height: 24px;
+
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -31,9 +31,9 @@
 <div class="right side">
   <h2 class="book-title">{{ bookTitle | truncate : 50 }}</h2>
   <app-spacer [height]="'8px'"></app-spacer>
-
-  <p>{{ authorName }}</p>
   <app-star-rating [rating]="averageRating"></app-star-rating>
+  <app-spacer [height]="'16px'"></app-spacer>
+  <p class="authorName">{{ authorName | truncate : 45 }}</p>
 
   @for (categorie of categories; track $index) {
   <p>{{ categorie }}</p>

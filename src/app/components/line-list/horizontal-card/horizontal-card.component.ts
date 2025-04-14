@@ -16,13 +16,7 @@ import { StarRatingComponent } from '../../star-rating/star-rating.component';
 
 @Component({
   selector: 'app-horizontal-card',
-  imports: [
-    DatePipe,
-    RateToStarPipe,
-    SpacerComponent,
-    TruncatePipe,
-    StarRatingComponent,
-  ],
+  imports: [DatePipe, SpacerComponent, TruncatePipe, StarRatingComponent],
   templateUrl: './horizontal-card.component.html',
   styleUrl: './horizontal-card.component.scss',
 })

@@ -356,7 +356,8 @@ export class MockBooksService {
       bookImagePath: 'meilleur-des-mondes.jpg',
       title: "Les Origines de la famille, de la propriété privée et de l'État",
       authorID: 7,
-      authorName: 'Friedrich Engels',
+      authorName:
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ        01234567891011121314151617181920212223242526',
       firstPublished: new Date('1884-01-01'),
       averageRating: 2.3,
       genres: [Genre.NonFiction, Genre.Historical, Genre.Biography],

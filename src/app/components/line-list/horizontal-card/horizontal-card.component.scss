@@ -56,6 +56,16 @@
   min-height: 25px;
   max-height: 176px;
   line-clamp: 3;
+
+  hyphens: manual;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .authorName {

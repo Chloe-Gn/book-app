@@ -4,6 +4,7 @@ import { BookComment } from './comment.model';
 
 export interface Book {
   id: number;
+  bookPagePath: string;
   bookImagePath: string;
   title: string;
   authorID: number;

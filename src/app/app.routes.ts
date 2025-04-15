@@ -4,6 +4,7 @@ import { LibraryHomepageComponent } from './pages/library-homepage/library-homep
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MyListPageComponent } from './pages/my-list-page/my-list-page.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
+import { BookPageComponent } from './pages/book-page/book-page.component';
 
 //The order of routes is important because
 //the Router uses a first-match wins strategy when matching routes
@@ -23,5 +24,13 @@ export const routes: Routes = [
   {
     path: 'bibliotheque',
     component: LibraryHomepageComponent,
+  },
+  {
+    path: 'livre/:pagePath',
+    component: BookPageComponent,
+  },
+  {
+    path: '',
+    component: BookPageComponent,
   },
 ];

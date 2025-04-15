@@ -1,0 +1,13 @@
+<div class="book-cover-container">
+  <app-like-icon></app-like-icon>
+  <div class="book-cover-box">
+    <img
+      class="image"
+      [src]="bookImage"
+      alt="Image de couverture du livre &quot;{{ bookTitle }}&quot;"
+    />
+  </div>
+  <div class="publication-date-container">
+    <p>Publié en {{ publicationDate | date : "Y" }}</p>
+  </div>
+</div>

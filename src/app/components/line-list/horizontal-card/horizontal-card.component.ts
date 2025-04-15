@@ -16,6 +16,7 @@ import { StarRatingComponent } from '../../star-rating/star-rating.component';
 import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
 import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
 import { Category } from '../../../models/category.model';
+import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-button.component';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -25,6 +26,7 @@ import { Category } from '../../../models/category.model';
     SmallChipsComponent,
     SpacerComponent,
     StarRatingComponent,
+    TertiaryButtonComponent,
     TitleCasePipe,
     TruncatePipe,
   ],

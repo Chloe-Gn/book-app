@@ -1,0 +1,40 @@
+@import "../../../../styles.scss";
+
+//constant - not dependable on state
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: 384px;
+}
+
+.book-cover-container {
+  background-color: $color-primary-200;
+  border-radius: 27px;
+}
+
+.image {
+  height: 323px;
+}
+
+.book-cover-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(384px - 64px);
+}
+
+.publication-date-container {
+  font-family: "Inter medium";
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-primary-200;
+  background-color: $color-primary-800;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 27px 27px;
+}

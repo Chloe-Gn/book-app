@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+
+.tertiary-button {
+  font-family: "Inter semibold";
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-grey-900;
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+}

@@ -23,6 +23,7 @@ export class MockBooksService {
   allBooks: Book[] = [
     {
       id: 1,
+      bookPagePath: '/livre/les-piliers-de-la-mer',
       bookImagePath: 'piliers-de-la-mer.jpg',
       title: 'Les piliers de la mer',
       authorID: 1,
@@ -52,6 +53,7 @@ export class MockBooksService {
     },
     {
       id: 2,
+      bookPagePath: '/livre/club-loney',
       bookImagePath: 'club-lonely.jpg',
       title: 'Club lonely',
       authorID: 7,
@@ -81,6 +83,7 @@ export class MockBooksService {
     },
     {
       id: 3,
+      bookPagePath: '/livre/cometa',
       bookImagePath: 'cometa.jpg',
       title: 'Cometa',
       authorID: 3,
@@ -110,6 +113,7 @@ export class MockBooksService {
     },
     {
       id: 4,
+      bookPagePath: '/livre/gagner-sa-patee',
       bookImagePath: 'gagner-sa-patee.jpg',
       title: 'Gagner sa pâtée',
       authorID: 4,
@@ -139,6 +143,7 @@ export class MockBooksService {
     },
     {
       id: 5,
+      bookPagePath: '/livre/la-fin-du-sens',
       bookImagePath: 'la-fin-du-sens.jpg',
       title: 'La fin du sens',
       authorID: 5,
@@ -168,6 +173,7 @@ export class MockBooksService {
     },
     {
       id: 6,
+      bookPagePath: '/livre/moon-2',
       bookImagePath: 'moon-2.jpg',
       title: 'Moon 2',
       authorID: 6,
@@ -197,6 +203,7 @@ export class MockBooksService {
     },
     {
       id: 7,
+      bookPagePath: '/livre/strange-fruit',
       bookImagePath: 'strange-fruit.jpg',
       title: 'Strange fruit',
       authorID: 2,
@@ -226,6 +233,7 @@ export class MockBooksService {
     },
     {
       id: 8,
+      bookPagePath: '/livre/l-annee-du-teckel',
       bookImagePath: 'annee-du-teckel.jpg',
       title: "L'année du teckel",
       authorID: 8,
@@ -255,6 +263,7 @@ export class MockBooksService {
     },
     {
       id: 9,
+      bookPagePath: '/livre/hope',
       bookImagePath: 'hope.jpg',
       title: 'Hope',
       authorID: 9,
@@ -284,6 +293,7 @@ export class MockBooksService {
     },
     {
       id: 10,
+      bookPagePath: '/livre/le-nauffrage-du-titanic',
       bookImagePath: 'le-nauffrage-du-titanic.jpg',
       title: 'Le nauffrage du Titanic',
       authorID: 10,
@@ -313,6 +323,7 @@ export class MockBooksService {
     },
     {
       id: 11,
+      bookPagePath: '/livre/les-eclaireuses',
       bookImagePath: 'les-eclaireuses.jpg',
       title: 'Les éclaireuses',
       authorID: 11,
@@ -342,6 +353,7 @@ export class MockBooksService {
     },
     {
       id: 12,
+      bookPagePath: '/livre/pamoja',
       bookImagePath: 'pamoja.jpg',
       title: 'Pamoja',
       authorID: 12,
@@ -371,6 +383,7 @@ export class MockBooksService {
     },
     {
       id: 13,
+      bookPagePath: '/livre/1984',
       bookImagePath: '1984.jpg',
       title: '1984',
       authorID: 13,
@@ -400,6 +413,7 @@ export class MockBooksService {
     },
     {
       id: 14,
+      bookPagePath: '/livre/l-attrape-coeur',
       bookImagePath: 'attrape-coeur.jpg',
       title: "L'attrape-coeurs",
       authorID: 14,
@@ -429,6 +443,7 @@ export class MockBooksService {
     },
     {
       id: 15,
+      bookPagePath: '/livre/gatsby',
       bookImagePath: 'gatsby.jpg',
       title: 'Gatsby le magnifique',
       authorID: 15,
@@ -458,6 +473,7 @@ export class MockBooksService {
     },
     {
       id: 16,
+      bookPagePath: '//livre/le-seigneur-des-anneaux-la-communaute-de-l-anneau',
       bookImagePath: 'seigneur-anneaux-communaute.jpg',
       title: "Le seigneur des anneaux : la communauté de l'anneau",
       authorID: 16,

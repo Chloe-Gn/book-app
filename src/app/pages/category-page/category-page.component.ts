@@ -30,15 +30,14 @@ export class CategoryPageComponent implements OnInit {
 
   title: string = '';
   books: Book[] = [];
-  //cardObject = input();
-  //cardObject will be a method that gets the book per category
 
   activatedRoute = inject(ActivatedRoute);
 
   ngOnInit(): void {
     const state = history.state as { title: string };
+    const categId = history.state as { id: number };
     this.title = state?.title || 'Sélection';
-    this.books = this.bookService.nonFictionBooks;
+    this.books = this.bookService.allBooks;
   }
 
   //later replace nonFictionBooks by a method that accepts categ as a parameter

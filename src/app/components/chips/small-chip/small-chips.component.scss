@@ -21,7 +21,7 @@
 
 .chips-carousel {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  -ms-overflow-style: none; /* IE/Edge - ms prefix means Microsoft */
 }
 
 .chip {

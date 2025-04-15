@@ -23,7 +23,7 @@ export class TileListPlainTileComponent implements OnInit {
   categoryId: number = 0;
 
   ngOnInit(): void {
-    this.tileName = this.tileObject()!.categoryName;
+    this.tileName = this.tileObject()!.categoryNamePlural;
     this.category = this.tileObject()!.path;
     this.categoryId = this.tileObject()!.id;
   }

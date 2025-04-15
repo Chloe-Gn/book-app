@@ -1,5 +1,6 @@
 export interface Category {
   id: number;
-  categoryName: string;
+  categoryNamePlural: string;
+  categoryNameSingular: string;
   path: string;
 }

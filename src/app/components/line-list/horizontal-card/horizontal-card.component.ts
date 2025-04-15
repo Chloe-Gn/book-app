@@ -15,6 +15,7 @@ import { RateToStarPipe } from '../../../pipes/rate-to-stars.pipe';
 import { StarRatingComponent } from '../../star-rating/star-rating.component';
 import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
 import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
+import { Category } from '../../../models/category.model';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -38,7 +39,7 @@ export class HorizontalCardComponent implements OnInit {
   bookTitle: string = '';
   averageRating: number = 0;
   authorName: string = '';
-  categories: Genre[] = [];
+  categories: string[] = [];
 
   imageFolder: string = 'assets/images/';
   starHalfFilled: string = ICON_STAR_HALF_FILLED;
@@ -52,6 +53,8 @@ export class HorizontalCardComponent implements OnInit {
     this.bookTitle = this.book()!.title;
     this.averageRating = this.book()!.averageRating;
     this.authorName = this.book()!.authorName;
-    this.categories = this.book()!.genres;
+    this.categories = this.book()!.categories.map(
+      (category) => category.categoryNameSingular
+    );
   }
 }

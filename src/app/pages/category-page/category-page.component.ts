@@ -26,7 +26,7 @@ import { MockBooksService } from '../../services/bookService/mock-books.service'
   styleUrl: './category-page.component.scss',
 })
 export class CategoryPageComponent implements OnInit {
-  constructor(private bookService: MockBooksService) {}
+  constructor(private bookService: MockBooksService, private router: Router) {}
 
   title: string = '';
   books: Book[] = [];
@@ -36,8 +36,9 @@ export class CategoryPageComponent implements OnInit {
   ngOnInit(): void {
     const state = history.state as { title: string };
     const categId = history.state as { id: number };
+    console.log(history.state);
     this.title = state?.title || 'Sélection';
-    this.books = this.bookService.allBooks;
+    this.books = this.bookService.getBooks(categId.id as number);
   }
 
   //later replace nonFictionBooks by a method that accepts categ as a parameter

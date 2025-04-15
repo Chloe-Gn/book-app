@@ -1,4 +1,7 @@
 <!-- <div class="tile">{{ tileName() | titlecase }}</div> -->
-<a [routerLink]="category" [state]="{ title: tileName }" class="tile">{{
-  tileName | titlecase
-}}</a>
+<a
+  [routerLink]="category"
+  [state]="{ title: tileName, id: categoryId }"
+  class="tile"
+  >{{ tileName | titlecase }}</a
+>

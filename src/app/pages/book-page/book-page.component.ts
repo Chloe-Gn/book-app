@@ -14,8 +14,8 @@ import { Router } from '@angular/router';
 })
 export class BookPageComponent implements OnInit {
   title: string = 'Fiche du livre';
-  book: Book = {} as Book;
-  bookTitle: string = '';
+  book: Book | undefined = {} as Book;
+  bookTitle: string | undefined = '';
 
   constructor(private bookService: MockBooksService) {}
 
@@ -24,7 +24,7 @@ export class BookPageComponent implements OnInit {
   ngOnInit(): void {
     const bookId: number = history.state.id;
     this.book = this.bookService.getBookById(bookId);
-    this.bookTitle = this.book.title;
+    this.bookTitle = this.book?.title;
     console.log(history.state);
     console.log(this.book);
   }

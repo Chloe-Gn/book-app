@@ -19,7 +19,7 @@ export class MockBooksService {
     }
   }
 
-  getBookById(bookId: number) {
+  getBookById(bookId: number): undefined | Book {
     let book: Book = {} as Book;
     for (let i = 0; i < this.allBooks.length; i++) {
       if (this.allBooks[i].id === bookId) {

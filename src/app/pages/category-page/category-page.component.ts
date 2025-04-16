@@ -36,7 +36,6 @@ export class CategoryPageComponent implements OnInit {
   ngOnInit(): void {
     const state = history.state as { title: string };
     const categId = history.state as { id: number };
-    console.log(history.state);
     this.title = state?.title || 'Sélection';
     this.books = this.bookService.getBooks(categId.id as number);
   }

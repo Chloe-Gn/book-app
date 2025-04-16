@@ -5,7 +5,7 @@
   ></app-top-bar-back-button
 ></app-top-bar>
 <app-spacer [height]="'120px'"></app-spacer>
-<app-filter-sort-bar></app-filter-sort-bar>
+<app-filter-sort-bar [books]="books"></app-filter-sort-bar>
 <app-spacer [height]="'60px'"></app-spacer>
 <app-horizontal-list-card>
   @for (bookObject of books; track bookObject.id) {

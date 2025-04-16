@@ -4,7 +4,6 @@ import { TopBarCloseButtonComponent } from '../../components/top-bar/top-bar-clo
 import { BookCoverBigComponent } from '../../components/book-cover/book-cover-big/book-cover-big.component';
 import { MockBooksService } from '../../services/bookService/mock-books.service';
 import { Book } from '../../models/book.model';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-page',

@@ -7,6 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './filter-sort-bar-dynamic-text.component.scss',
 })
 export class FilterSortBarDynamicTextComponent {
-  leftLabel = input();
-  rightLabel = input();
+  numberOfBooks = input<string>();
 }

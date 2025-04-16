@@ -1,6 +1,7 @@
 import { Component, input, OnInit } from '@angular/core';
 import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
 import { DatePipe } from '@angular/common';
+import { Book } from '../../../models/book.model';
 
 @Component({
   selector: 'app-book-cover-big',
@@ -14,8 +15,10 @@ export class BookCoverBigComponent implements OnInit {
   bookTitle: string | undefined = '';
   publicationDate: Date | undefined = new Date('0000-01-01');
 
+  imageFolder: string = 'assets/images/';
+
   ngOnInit(): void {
-    this.bookImage = this.bookObject()?.bookImagePath;
+    this.bookImage = this.imageFolder + this.bookObject()?.bookImagePath;
     this.bookTitle = this.bookObject()?.title;
     this.publicationDate = this.bookObject()?.firstPublished;
   }

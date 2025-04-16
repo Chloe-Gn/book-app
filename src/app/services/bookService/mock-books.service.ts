@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Book } from '../../models/book.model';
-import { Genre } from '../../utils/genre';
 import { Category } from '../../models/category.model';
 
 @Injectable({
@@ -18,6 +17,17 @@ export class MockBooksService {
     } else {
       return this.allBooks;
     }
+  }
+
+  getBookById(bookId: number) {
+    let book: Book = {} as Book;
+    for (let i = 0; i < this.allBooks.length; i++) {
+      if (this.allBooks[i].id === bookId) {
+        book = this.allBooks[i];
+        break;
+      }
+    }
+    return book;
   }
 
   allBooks: Book[] = [

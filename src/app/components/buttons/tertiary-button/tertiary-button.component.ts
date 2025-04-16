@@ -25,6 +25,7 @@ export class TertiaryButtonComponent {
       this.pagePath = currentObject.bookPagePath;
     }
   }
+
   private isBook(obj: any): obj is Book {
     return (
       obj &&

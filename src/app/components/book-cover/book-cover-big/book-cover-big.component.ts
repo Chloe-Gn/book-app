@@ -1,11 +1,11 @@
 import { Component, input, OnInit } from '@angular/core';
-import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
 import { DatePipe } from '@angular/common';
 import { Book } from '../../../models/book.model';
+import { LikeIcon48pxComponent } from '../../icons-with-state/like-icon48px/like-icon48px.component';
 
 @Component({
   selector: 'app-book-cover-big',
-  imports: [DatePipe, LikeIconComponent],
+  imports: [DatePipe, LikeIcon48pxComponent],
   templateUrl: './book-cover-big.component.html',
   styleUrl: './book-cover-big.component.scss',
 })

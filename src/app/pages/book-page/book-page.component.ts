@@ -4,10 +4,16 @@ import { TopBarCloseButtonComponent } from '../../components/top-bar/top-bar-clo
 import { BookCoverBigComponent } from '../../components/book-cover/book-cover-big/book-cover-big.component';
 import { MockBooksService } from '../../services/bookService/mock-books.service';
 import { Book } from '../../models/book.model';
+import { SpacerComponent } from '../../components/spacer/spacer.component';
 
 @Component({
   selector: 'app-book-page',
-  imports: [BookCoverBigComponent, TopBarComponent, TopBarCloseButtonComponent],
+  imports: [
+    BookCoverBigComponent,
+    SpacerComponent,
+    TopBarComponent,
+    TopBarCloseButtonComponent,
+  ],
   templateUrl: './book-page.component.html',
   styleUrl: './book-page.component.scss',
 })

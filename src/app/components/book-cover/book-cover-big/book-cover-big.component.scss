@@ -6,23 +6,32 @@
   display: flex;
   justify-content: space-between;
   height: 384px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .book-cover-container {
   background-color: $color-primary-200;
   border-radius: 27px;
+  height: 384px;
+  position: relative;
 }
 
 .image {
-  height: 323px;
+  width: 256px;
+  bottom: 0;
+  position: absolute;
 }
 
 .book-cover-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(384px - 64px);
+  height: calc(384px);
 }
 
 .publication-date-container {
@@ -37,4 +46,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 27px 27px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

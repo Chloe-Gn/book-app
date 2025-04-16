@@ -3,26 +3,22 @@ import { Book } from '../../../models/book.model';
 import { Genre } from '../../../utils/genre';
 import { DatePipe, TitleCasePipe } from '@angular/common';
 import {
-  ICON_HEART_OUTLINED,
   ICON_STAR_FILLED,
   ICON_STAR_HALF_FILLED,
   ICON_STAR_OUTLINED,
 } from '../../../../assets/icons/svg-paths/svg-paths';
-import { ICON_HEART_FILLED } from '../../../../assets/icons/svg-paths/svg-paths';
 import { TruncatePipe } from '../../../pipes/truncate.pipe';
 import { SpacerComponent } from '../../spacer/spacer.component';
-import { RateToStarPipe } from '../../../pipes/rate-to-stars.pipe';
 import { StarRatingComponent } from '../../star-rating/star-rating.component';
-import { LikeIconComponent } from '../../icons-with-state/like-icon/like-icon.component';
+import { LikeIconComponent40px } from '../../icons-with-state/like-icon-40px/like-icon-40px.component';
 import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
-import { Category } from '../../../models/category.model';
 import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-button.component';
 
 @Component({
   selector: 'app-horizontal-card',
   imports: [
     DatePipe,
-    LikeIconComponent,
+    LikeIconComponent40px,
     SmallChipsComponent,
     SpacerComponent,
     StarRatingComponent,

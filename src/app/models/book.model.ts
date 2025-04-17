@@ -12,6 +12,7 @@ export interface Book {
   firstPublished: Date;
   averageRating: number;
   categories: Category[];
+  incipit: string;
 }
 
 /*

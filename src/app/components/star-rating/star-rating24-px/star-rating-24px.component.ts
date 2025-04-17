@@ -1,17 +1,17 @@
-import { Component, computed, input, OnInit } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import {
   ICON_STAR_FILLED,
   ICON_STAR_HALF_FILLED,
   ICON_STAR_OUTLINED,
-} from '../../../assets/icons/svg-paths/svg-paths';
+} from '../../../../assets/icons/svg-paths/svg-paths';
 
 @Component({
-  selector: 'app-star-rating',
+  selector: 'app-star-rating-24px',
   imports: [],
-  templateUrl: './star-rating.component.html',
-  styleUrl: './star-rating.component.scss',
+  templateUrl: './star-rating-24px.component.html',
+  styleUrl: './star-rating-24px.component.scss',
 })
-export class StarRatingComponent {
+export class StarRating24PxComponent {
   rating = input<number>();
 
   svgPathStarFilled = ICON_STAR_FILLED;

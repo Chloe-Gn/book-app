@@ -1,0 +1,25 @@
+@import "../../../../styles.scss";
+
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: $color-primary-500;
+  border-radius: 50px;
+  padding: 20px 28px;
+  width: fit-content;
+}
+
+.primary-button {
+  font-family: "Inter medium";
+  font-size: 18px;
+  line-height: 25px;
+  color: $color-primary-100;
+}
+
+.container:hover {
+  background-color: $color-primary-400;
+  cursor: pointer;
+}

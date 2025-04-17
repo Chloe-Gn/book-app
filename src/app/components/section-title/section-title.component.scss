@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+:host {
+  width: fit-content;
+  color: $color-grey-600;
+  font-family: "Inter medium";
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

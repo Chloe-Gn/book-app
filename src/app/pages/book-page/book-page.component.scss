@@ -1,3 +1,35 @@
 @import "../../../styles.scss";
 
 //constant - not dependable on state
+
+.body-side-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+h1 {
+  font-family: "Inter bold";
+  color: $color-grey-900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.author-name {
+  font-family: "Inter regular";
+  font-size: 18px;
+  line-height: 25px;
+  hyphens: manual;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.incipit-text {
+  font-family: "Inter regular";
+  font-size: 18px;
+  line-break: 27px;
+  color: $color-grey-900;
+}
+
+.comment-spacing:not(:last-child) {
+  margin-bottom: 48px;
+}

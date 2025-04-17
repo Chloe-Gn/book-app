@@ -1,5 +1,5 @@
 export interface BookComment {
-  id: number;
+  commentId: number;
   bookId: number;
   userId: number;
   userName: string;

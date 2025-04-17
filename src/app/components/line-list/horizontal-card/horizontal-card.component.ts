@@ -1,7 +1,5 @@
 import { Component, input, OnInit } from '@angular/core';
 import { Book } from '../../../models/book.model';
-import { Genre } from '../../../utils/genre';
-import { DatePipe, TitleCasePipe } from '@angular/common';
 import {
   ICON_STAR_FILLED,
   ICON_STAR_HALF_FILLED,
@@ -9,10 +7,11 @@ import {
 } from '../../../../assets/icons/svg-paths/svg-paths';
 import { TruncatePipe } from '../../../pipes/truncate.pipe';
 import { SpacerComponent } from '../../spacer/spacer.component';
-import { StarRatingComponent } from '../../star-rating/star-rating.component';
+import { StarRatingComponent16px } from '../../star-rating/star-rating-16px/star-rating-16px.component';
 import { LikeIconComponent40px } from '../../icons-with-state/like-icon-40px/like-icon-40px.component';
 import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
 import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-button.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -21,9 +20,8 @@ import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-
     LikeIconComponent40px,
     SmallChipsComponent,
     SpacerComponent,
-    StarRatingComponent,
+    StarRatingComponent16px,
     TertiaryButtonComponent,
-    TitleCasePipe,
     TruncatePipe,
   ],
   templateUrl: './horizontal-card.component.html',

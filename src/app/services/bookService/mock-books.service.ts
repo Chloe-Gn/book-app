@@ -40,6 +40,8 @@ export class MockBooksService {
       authorName: 'Sylvain Tesson',
       firstPublished: new Date('2025-04-02'),
       averageRating: 0.4,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 1,
@@ -70,6 +72,8 @@ export class MockBooksService {
       authorName: 'Pelle Forshed',
       firstPublished: new Date('2024-12-02'),
       averageRating: 3.7,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 4,
@@ -100,6 +104,8 @@ export class MockBooksService {
       authorName: 'Elie Huault',
       firstPublished: new Date('2022-11-01'),
       averageRating: 2.4,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 4,
@@ -130,6 +136,8 @@ export class MockBooksService {
       authorName: 'Kathy Lam',
       firstPublished: new Date('2023-08-02'),
       averageRating: 4.5,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 4,
@@ -160,6 +168,8 @@ export class MockBooksService {
       authorName: 'Ami Inintéressant & Rémi Lascault',
       firstPublished: new Date('1997-01-01'),
       averageRating: 3.2,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 4,
@@ -190,6 +200,8 @@ export class MockBooksService {
       authorName: 'Stephan Louvres & Johan Vandevelde',
       firstPublished: new Date('2021-07-09'),
       averageRating: 2,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 4,
@@ -220,6 +232,8 @@ export class MockBooksService {
       authorName: 'A. Dan & Hazard',
       firstPublished: new Date('2025-04-04'),
       averageRating: 5,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 1,
@@ -250,6 +264,8 @@ export class MockBooksService {
       authorName: 'Pierre Mikaïloff',
       firstPublished: new Date('2025-02-02'),
       averageRating: 3.2,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 1,
@@ -280,6 +296,8 @@ export class MockBooksService {
       authorName: 'Andrew Ridker',
       firstPublished: new Date('2025-01-01'),
       averageRating: 5,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 1,
@@ -310,6 +328,8 @@ export class MockBooksService {
       authorName: 'Joseph Conrad',
       firstPublished: new Date('1954-08-03'),
       averageRating: 3.5,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 7,
@@ -340,6 +360,8 @@ export class MockBooksService {
       authorName: 'Laurent Koessler',
       firstPublished: new Date('2025-01-04'),
       averageRating: 3,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 1,
@@ -370,6 +392,8 @@ export class MockBooksService {
       authorName: 'Jérome Lafargue',
       firstPublished: new Date('2011-11-26'),
       averageRating: 2.6,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 2,
@@ -400,6 +424,8 @@ export class MockBooksService {
       authorName: 'George Orwell',
       firstPublished: new Date('1949-02-02'),
       averageRating: 5,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 6,
@@ -430,6 +456,8 @@ export class MockBooksService {
       authorName: 'J.D. Salinger',
       firstPublished: new Date('1951-07-16'),
       averageRating: 3,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 10,
@@ -460,6 +488,8 @@ export class MockBooksService {
       authorName: 'Francis Scott Fitzgerald',
       firstPublished: new Date('1925-09-04 '),
       averageRating: 3.4,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 2,
@@ -490,6 +520,8 @@ export class MockBooksService {
       authorName: 'J. R. R. Tolkien',
       firstPublished: new Date('1954-09-09'),
       averageRating: 4.6,
+      incipit:
+        "Le corps a une mémoire, votre psyché aussi. Quand le pan d'une falaise s'écroule soudain dans la mer, tout le monde sait bien que ce n'est pas une fêlure spontanée et immédiate qui a provoqué cette chute. Il y a déjà très longtemps que les fissures et les craquements souterrains avaient commencé leur invisible travail de sape.",
       categories: [
         {
           id: 5,
@@ -512,6 +544,4 @@ export class MockBooksService {
       ],
     },
   ];
-
-  constructor() {}
 }

@@ -1,0 +1,37 @@
+@import "../../../../styles.scss";
+
+.chips-carousel {
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+  cursor: grab;
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chips-carousel:active {
+  cursor: grabbing;
+}
+
+/* Hide scrollbars across all browsers */
+.chips-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.chips-carousel {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge - ms prefix means Microsoft */
+}
+
+.chip {
+  background-color: $color-accent-200;
+  color: $color-accent-900;
+  font-family: "Inter regular";
+  line-height: 24px;
+  padding: 5px 12px;
+  border-radius: 18px;
+  font-size: 16px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}

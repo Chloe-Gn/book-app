@@ -1,0 +1,33 @@
+<div class="stars-container">
+  @for (star of stars(); track $index) { @if (star === 'full'){
+  <div>
+    <svg
+      class="svg-selector"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path [attr.d]="svgPathStarFilled" class="star-icon-path" />
+    </svg>
+  </div>
+  } @if (star === 'half'){
+  <div>
+    <svg
+      class="svg-selector"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path [attr.d]="svgPathStarHalfFilled" class="star-icon-path" />
+    </svg>
+  </div>
+  } @if (star === 'empty'){
+  <div>
+    <svg
+      class="svg-selector"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path [attr.d]="svgPathStarOutlined" class="star-icon-path" />
+    </svg>
+  </div>
+  }}
+</div>

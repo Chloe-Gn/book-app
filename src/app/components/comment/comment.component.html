@@ -1,0 +1,9 @@
+<div class="left">
+  <div class="user-avatar"></div>
+</div>
+<div class="right">
+  <h2>{{ comment()?.userName }}</h2>
+  <app-star-rating-16px [rating]="comment()?.rating"></app-star-rating-16px>
+  <p>{{ comment()?.content }}</p>
+  <app-link-button [label]="'Lire plus'"></app-link-button>
+</div>

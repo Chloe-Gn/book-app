@@ -31,6 +31,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    component: BookPageComponent,
+    redirectTo: '/bibliotheque',
+    pathMatch: 'full',
   },
 ];

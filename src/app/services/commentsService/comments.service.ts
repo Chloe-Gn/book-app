@@ -13,6 +13,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 4,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 2,
@@ -21,6 +22,7 @@ export class CommentsService {
       userName: 'Chloé Bernard',
       rating: 4,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-05.jpg',
     },
     {
       commentId: 3,
@@ -29,6 +31,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 1,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 4,
@@ -37,6 +40,7 @@ export class CommentsService {
       userName: 'Camille Rousseau',
       rating: 5,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-09.jpg',
     },
     {
       commentId: 5,
@@ -45,6 +49,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 3,
       content: 'Une lecture moyenne, ni bonne ni mauvaise.',
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 6,
@@ -53,6 +58,7 @@ export class CommentsService {
       userName: 'Lucas Moreau',
       rating: 2,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-04.jpg',
     },
     {
       commentId: 7,
@@ -61,6 +67,7 @@ export class CommentsService {
       userName: 'Camille Rousseau',
       rating: 2,
       content: 'Les personnages manquent de profondeur.',
+      userAvatar: 'avatar-09.jpg',
     },
     {
       commentId: 8,
@@ -69,6 +76,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 2,
       content: "Je n'ai pas réussi à finir le livre.",
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 9,
@@ -77,6 +85,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 3,
       content: "L'histoire est bien construite, mais un peu lente à mon goût.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 10,
@@ -85,6 +94,7 @@ export class CommentsService {
       userName: 'Lucas Moreau',
       rating: 3,
       content: 'Une lecture agréable sans être exceptionnelle.',
+      userAvatar: 'avatar-04.jpg',
     },
     {
       commentId: 11,
@@ -93,6 +103,7 @@ export class CommentsService {
       userName: 'Nathan Petit',
       rating: 5,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-08.jpg',
     },
     {
       commentId: 12,
@@ -101,6 +112,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 1,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 13,
@@ -109,6 +121,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 3,
       content: 'Une lecture moyenne, ni bonne ni mauvaise.',
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 14,
@@ -117,6 +130,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 1,
       content: "Déçu par ce livre, je m'attendais à mieux.",
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 15,
@@ -125,6 +139,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 4,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 16,
@@ -133,6 +148,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 4,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-07.jpg',
     },
     {
       commentId: 17,
@@ -141,6 +157,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 1,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 18,
@@ -149,6 +166,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 5,
       content: "Un livre captivant, je l'ai dévoré en une journée !",
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 19,
@@ -157,6 +175,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 1,
       content: "Déçu par ce livre, je m'attendais à mieux.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 20,
@@ -165,6 +184,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 4,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 21,
@@ -173,6 +193,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 2,
       content: 'Les personnages manquent de profondeur.',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 22,
@@ -181,6 +202,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 3,
       content: 'Une lecture agréable sans être exceptionnelle.',
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 23,
@@ -189,6 +211,7 @@ export class CommentsService {
       userName: 'Chloé Bernard',
       rating: 2,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-05.jpg',
     },
     {
       commentId: 24,
@@ -197,6 +220,7 @@ export class CommentsService {
       userName: 'Chloé Bernard',
       rating: 3,
       content: 'Une lecture moyenne, ni bonne ni mauvaise.',
+      userAvatar: 'avatar-05.jpg',
     },
     {
       commentId: 25,
@@ -205,6 +229,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 1,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 26,
@@ -213,6 +238,7 @@ export class CommentsService {
       userName: 'Nathan Petit',
       rating: 2,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-08.jpg',
     },
     {
       commentId: 27,
@@ -221,6 +247,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 4,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 28,
@@ -229,6 +256,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 4,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 29,
@@ -237,6 +265,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 3,
       content: 'Une lecture agréable sans être exceptionnelle.',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 30,
@@ -245,6 +274,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 5,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 31,
@@ -253,6 +283,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 4,
       content: "J'ai adoré, c'était un véritable coup de cœur.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 32,
@@ -261,6 +292,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 4,
       content: "Un livre captivant, je l'ai dévoré en une journée !",
+      userAvatar: 'avatar-06.jpg',
     },
     {
       commentId: 33,
@@ -269,6 +301,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 3,
       content: "C'était intéressant, mais pas inoubliable.",
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 34,
@@ -277,6 +310,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 2,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 35,
@@ -285,6 +319,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 5,
       content: "Un livre captivant, je l'ai dévoré en une journée !",
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 36,
@@ -293,6 +328,7 @@ export class CommentsService {
       userName: 'Chloé Bernard',
       rating: 4,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-05.jpg',
     },
     {
       commentId: 37,
@@ -301,6 +337,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 4,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 38,
@@ -309,6 +346,7 @@ export class CommentsService {
       userName: 'Nathan Petit',
       rating: 5,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-08.jpg',
     },
     {
       commentId: 39,
@@ -317,6 +355,7 @@ export class CommentsService {
       userName: 'Lucas Moreau',
       rating: 2,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-04.jpg',
     },
     {
       commentId: 40,
@@ -325,6 +364,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 1,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-07.jpg',
     },
     {
       commentId: 41,
@@ -333,6 +373,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 1,
       content: "Je n'ai pas réussi à finir le livre.",
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 42,
@@ -341,6 +382,7 @@ export class CommentsService {
       userName: 'Nathan Petit',
       rating: 4,
       content: "J'ai adoré, c'était un véritable coup de cœur.",
+      userAvatar: 'avatar-08.jpg',
     },
     {
       commentId: 43,
@@ -349,6 +391,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 2,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 44,
@@ -357,6 +400,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 1,
       content: "Je n'ai pas réussi à finir le livre.",
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 45,
@@ -365,6 +409,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 1,
       content: 'Trop de longueurs, je me suis ennuyé.',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 46,
@@ -373,6 +418,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 1,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 47,
@@ -381,6 +427,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 2,
       content: 'Les personnages manquent de profondeur.',
+      userAvatar: 'avatar-07.jpg',
     },
     {
       commentId: 48,
@@ -389,6 +436,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 5,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 49,
@@ -397,6 +445,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 3,
       content: 'Une lecture moyenne, ni bonne ni mauvaise.',
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 50,
@@ -405,6 +454,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 1,
       content: 'Les personnages manquent de profondeur.',
+      userAvatar: 'avatar-07.jpg',
     },
     {
       commentId: 51,
@@ -413,6 +463,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 2,
       content: "Je n'ai pas accroché, l'histoire est trop prévisible.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 52,
@@ -421,6 +472,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 1,
       content: "Déçu par ce livre, je m'attendais à mieux.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 53,
@@ -429,6 +481,7 @@ export class CommentsService {
       userName: 'Thomas Garcia',
       rating: 3,
       content: "Le livre est correct, mais il m'a manqué quelque chose.",
+      userAvatar: 'avatar-16.jpg',
     },
     {
       commentId: 54,
@@ -437,6 +490,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 5,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 55,
@@ -445,6 +499,7 @@ export class CommentsService {
       userName: 'Marie Dupont',
       rating: 5,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-01.jpg',
     },
     {
       commentId: 56,
@@ -453,6 +508,7 @@ export class CommentsService {
       userName: 'Camille Rousseau',
       rating: 5,
       content: 'Magnifique, je recommande fortement !',
+      userAvatar: 'avatar-09.jpg',
     },
     {
       commentId: 57,
@@ -461,6 +517,7 @@ export class CommentsService {
       userName: 'Lucas Moreau',
       rating: 5,
       content: "Un livre captivant, je l'ai dévoré en une journée !",
+      userAvatar: 'avatar-04.jpg',
     },
     {
       commentId: 58,
@@ -469,6 +526,7 @@ export class CommentsService {
       userName: 'Léo Girard',
       rating: 1,
       content: "Déçu par ce livre, je m'attendais à mieux.",
+      userAvatar: 'avatar-10.jpg',
     },
     {
       commentId: 59,
@@ -477,6 +535,7 @@ export class CommentsService {
       userName: 'Nathan Petit',
       rating: 3,
       content: 'Une lecture agréable sans être exceptionnelle.',
+      userAvatar: 'avatar-08.jpg',
     },
     {
       commentId: 60,
@@ -485,6 +544,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 1,
       content: 'Les personnages manquent de profondeur.',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 61,
@@ -493,6 +553,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 5,
       content: "Un livre captivant, je l'ai dévoré en une journée !",
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 62,
@@ -501,6 +562,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 3,
       content: "Le livre est correct, mais il m'a manqué quelque chose.",
+      userAvatar: 'avatar-07.jpg',
     },
     {
       commentId: 63,
@@ -509,6 +571,7 @@ export class CommentsService {
       userName: 'Jean Martin',
       rating: 3,
       content: 'Une lecture moyenne, ni bonne ni mauvaise.',
+      userAvatar: 'avatar-02.jpg',
     },
     {
       commentId: 64,
@@ -517,6 +580,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 1,
       content: "Déçu par ce livre, je m'attendais à mieux.",
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 65,
@@ -525,6 +589,7 @@ export class CommentsService {
       userName: 'Sophie Lambert',
       rating: 5,
       content: 'Très bien écrit, les personnages sont attachants.',
+      userAvatar: 'avatar-03.jpg',
     },
     {
       commentId: 66,
@@ -533,6 +598,7 @@ export class CommentsService {
       userName: 'Lucas Moreau',
       rating: 4,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-04.jpg',
     },
     {
       commentId: 67,
@@ -541,6 +607,7 @@ export class CommentsService {
       userName: 'Emma Lefevre',
       rating: 5,
       content: 'Une histoire émouvante et pleine de rebondissements.',
+      userAvatar: 'avatar-07.jpg',
     },
   ];
 

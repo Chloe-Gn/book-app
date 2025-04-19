@@ -18,9 +18,8 @@
 
 .user-avatar {
   height: 64px;
-  width: 64px;
+  min-width: 64px;
   border-radius: 50px;
-  background-color: $color-grey-500;
 }
 
 h2 {

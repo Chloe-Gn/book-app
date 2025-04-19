@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Book } from '../../models/book.model';
 import { Category } from '../../models/category.model';
+import { seededShuffle } from '../../utils/shuffle-functions';
 
 @Injectable({
   providedIn: 'root',

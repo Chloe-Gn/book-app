@@ -5,4 +5,5 @@ export interface BookComment {
   userName: string;
   rating: number;
   content: string;
+  userAvatar: string;
 }

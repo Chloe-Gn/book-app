@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { ICON_CLOSE_CROSS } from '../../../../assets/icons/svg-paths/svg-paths';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NavigationService } from '../../../services/navigationService/navigation.service';
@@ -15,7 +15,10 @@ export class TopBarCloseButtonComponent {
 
   private navigationService = inject(NavigationService);
 
-  goBack() {}
+  goBack() {
+    this.navigationService.goBack();
+  }
 
   icon: string = ICON_CLOSE_CROSS;
+  extras = input<any>();
 }

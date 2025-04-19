@@ -551,7 +551,6 @@ export class CommentsService {
         arrayOfComments.push(this.allComments[i]);
       }
     }
-    console.log(arrayOfComments);
     return arrayOfComments;
   }
 }

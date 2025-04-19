@@ -10,6 +10,8 @@ import { HorizontalCardComponent } from '../../components/line-list/horizontal-c
 import { Book } from '../../models/book.model';
 import { MockBooksService } from '../../services/bookService/mock-books.service';
 import { NavigationService } from '../../services/navigationService/navigation.service';
+import { MockCategoryService } from '../../services/categoryService/mock-category.service';
+import { Category } from '../../models/category.model';
 
 @Component({
   selector: 'app-category-page',
@@ -26,25 +28,39 @@ import { NavigationService } from '../../services/navigationService/navigation.s
   styleUrl: './category-page.component.scss',
 })
 export class CategoryPageComponent implements OnInit {
-  constructor(private bookService: MockBooksService) {}
+  constructor(
+    private bookService: MockBooksService,
+    private categoryService: MockCategoryService,
+    private router: Router
+  ) {}
 
   activatedRoute = inject(ActivatedRoute);
   navigationService = inject(NavigationService);
   previousPage: string | null = null;
+  currentCateg: Category | undefined;
 
   title: string = '';
   books: Book[] = [];
 
+  goBack() {
+    this.navigationService.navigate('/bibliotheque');
+  }
+
   ngOnInit(): void {
     this.previousPage = this.navigationService.getPreviousUrl();
 
-    const state = history.state as {
+    /*   const state = history.state as {
       title?: string;
       id?: number;
     };
     this.title = state?.title || 'Sélection';
-    this.books = this.bookService.getBooks(state?.id as number);
-    console.log(this.previousPage);
-    console.log('came from ' + this.previousPage);
+    */
+    this.currentCateg = this.categoryService.getCategoryObjectByPath(
+      this.router.url
+    );
+    console.log(this.currentCateg);
+    this.title = this.currentCateg?.categoryNamePlural || 'Sélection';
+
+    this.books = this.bookService.getBooks(this.currentCateg?.id);
   }
 }

@@ -42,10 +42,14 @@ export class NavigationService {
       : null;
   }
 
-  goBack() {
+  goBack(extras?: any) {
     const previousUrl = this.history.pop();
     if (previousUrl) {
-      this.router.navigateByUrl(previousUrl);
+      this.router.navigateByUrl(previousUrl, {
+        state: {
+          ...extras,
+        },
+      });
     }
 
     sessionStorage.setItem('navigationHistory', JSON.stringify(this.history));

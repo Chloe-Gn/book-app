@@ -71,4 +71,12 @@ export class MockCategoryService {
   getCategories(): Category[] {
     return this.categories;
   }
+
+  getCategoryObjectByPath(path: string): Category {
+    const found = this.categories.find((c) => c.path === path);
+    if (!found) {
+      throw new Error(`Category not found for path : ${path}`);
+    }
+    return found;
+  }
 }

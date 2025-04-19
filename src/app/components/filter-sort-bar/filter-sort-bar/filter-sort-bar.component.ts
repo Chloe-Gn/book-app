@@ -20,7 +20,6 @@ export class FilterSortBarComponent implements OnInit {
   ngOnInit(): void {
     const books = this.books();
     const bookLength: number | undefined = books?.length;
-    console.log(bookLength);
     switch (bookLength) {
       case 0: {
         this.numberOfBooks = 'Pas de livres';

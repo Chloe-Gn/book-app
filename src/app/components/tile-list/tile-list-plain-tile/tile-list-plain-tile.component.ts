@@ -1,5 +1,6 @@
 import {
   Component,
+  inject,
   input,
   InputSignal,
   OnInit,
@@ -8,11 +9,12 @@ import {
 } from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
 import { Category } from '../../../models/category.model';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { NavigationService } from '../../../services/navigationService/navigation.service';
 
 @Component({
   selector: 'app-tile-list-plain-tile',
-  imports: [TitleCasePipe, RouterLink],
+  imports: [TitleCasePipe],
   templateUrl: './tile-list-plain-tile.component.html',
   styleUrl: './tile-list-plain-tile.component.scss',
 })
@@ -21,6 +23,17 @@ export class TileListPlainTileComponent implements OnInit {
   tileName: string = '';
   category: string = '';
   categoryId: number = 0;
+
+  private navigationService = inject(NavigationService);
+
+  navigateTo() {
+    this.navigationService.navigate(this.category, {
+      state: {
+        title: this.tileName,
+        id: this.categoryId,
+      },
+    });
+  }
 
   ngOnInit(): void {
     this.tileName = this.tileObject()!.categoryNamePlural;

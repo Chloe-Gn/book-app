@@ -1,6 +1,9 @@
 <a
-  [routerLink]="pagePath"
-  [state]="{ title: pageTitle, id: objectId }"
+  (click)="
+    navigateTo(pagePath, {
+      state: { id: objectId }
+    })
+  "
   class="tertiary-button"
 >
   En savoir plus

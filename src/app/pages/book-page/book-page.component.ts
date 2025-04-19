@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TopBarComponent } from '../../components/top-bar/top-bar/top-bar.component';
 import { TopBarCloseButtonComponent } from '../../components/top-bar/top-bar-close-button/top-bar-close-button.component';
 import { BookCoverBigComponent } from '../../components/book-cover/book-cover-big/book-cover-big.component';
@@ -13,6 +13,7 @@ import { BookComment } from '../../models/comment.model';
 import { CommentsService } from '../../services/commentsService/comments.service';
 import { CommentComponent } from '../../components/comment/comment.component';
 import { SecondaryButtonComponent } from '../../components/buttons/secondary-button/secondary-button.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-page',

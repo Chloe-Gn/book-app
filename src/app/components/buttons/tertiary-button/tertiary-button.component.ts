@@ -1,7 +1,8 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Book } from '../../../models/book.model';
 import { Category } from '../../../models/category.model';
+import { NavigationService } from '../../../services/navigationService/navigation.service';
 
 @Component({
   selector: 'app-tertiary-button',
@@ -15,6 +16,12 @@ export class TertiaryButtonComponent {
   objectId: number = 0;
   pageTitle: string = '';
   pagePath: string = '';
+
+  private navigationService = inject(NavigationService);
+
+  navigateTo(path: string, extras?: any) {
+    this.navigationService.navigate(path, extras);
+  }
 
   ngOnInit(): void {
     const currentObject = this.object();

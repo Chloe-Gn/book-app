@@ -1,6 +1,1 @@
-<a
-  [routerLink]="category"
-  [state]="{ title: tileName, id: categoryId }"
-  class="tile"
-  >{{ tileName | titlecase }}</a
->
+<a (click)="navigateTo()" class="tile">{{ tileName | titlecase }}</a>

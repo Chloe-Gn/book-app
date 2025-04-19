@@ -9,6 +9,7 @@ import { HorizontalListCardComponent } from '../../components/line-list/horizont
 import { HorizontalCardComponent } from '../../components/line-list/horizontal-card/horizontal-card.component';
 import { Book } from '../../models/book.model';
 import { MockBooksService } from '../../services/bookService/mock-books.service';
+import { NavigationService } from '../../services/navigationService/navigation.service';
 
 @Component({
   selector: 'app-category-page',
@@ -18,7 +19,6 @@ import { MockBooksService } from '../../services/bookService/mock-books.service'
     HorizontalListCardComponent,
     HorizontalCardComponent,
     NavBarComponent,
-    RouterLink,
     SpacerComponent,
     TopBarBackButtonComponent,
   ],
@@ -28,15 +28,23 @@ import { MockBooksService } from '../../services/bookService/mock-books.service'
 export class CategoryPageComponent implements OnInit {
   constructor(private bookService: MockBooksService) {}
 
+  activatedRoute = inject(ActivatedRoute);
+  navigationService = inject(NavigationService);
+  previousPage: string | null = null;
+
   title: string = '';
   books: Book[] = [];
 
-  activatedRoute = inject(ActivatedRoute);
-
   ngOnInit(): void {
-    const state = history.state as { title: string };
-    const categId = history.state as { id: number };
+    this.previousPage = this.navigationService.getPreviousUrl();
+
+    const state = history.state as {
+      title?: string;
+      id?: number;
+    };
     this.title = state?.title || 'Sélection';
-    this.books = this.bookService.getBooks(categId.id as number);
+    this.books = this.bookService.getBooks(state?.id as number);
+    console.log(this.previousPage);
+    console.log('came from ' + this.previousPage);
   }
 }

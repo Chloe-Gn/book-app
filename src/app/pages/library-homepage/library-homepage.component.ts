@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar/nav-bar.component';
 import { TopBarComponent } from '../../components/top-bar/top-bar/top-bar.component';
 import { TileLIstComponent } from '../../components/tile-list/tile-list/tile-list.component';
@@ -6,6 +6,7 @@ import { TileListPlainTileComponent } from '../../components/tile-list/tile-list
 import { MockCategoryService } from '../../services/categoryService/mock-category.service';
 import { Category } from '../../models/category.model';
 import { SpacerComponent } from '../../components/spacer/spacer.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-library-homepage',
@@ -21,6 +22,7 @@ import { SpacerComponent } from '../../components/spacer/spacer.component';
 })
 export class LibraryHomepageComponent implements OnInit {
   constructor(private mockCategoryService: MockCategoryService) {}
+  router = inject(Router);
   title: string = 'bibliothèque';
   tileObjects: Category[] = [];
 

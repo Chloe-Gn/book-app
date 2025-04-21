@@ -5,6 +5,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MyListPageComponent } from './pages/my-list-page/my-list-page.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { BookPageComponent } from './pages/book-page/book-page.component';
+import { LoggedoutHomePageComponent } from './pages/loggedout-home-page/loggedout-home-page.component';
 
 //The order of routes is important because
 //the Router uses a first-match wins strategy when matching routes
@@ -31,7 +32,6 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/bibliotheque',
-    pathMatch: 'full',
+    component: LoggedoutHomePageComponent,
   },
 ];

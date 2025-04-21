@@ -1,3 +1,8 @@
-<div class="container">
-  <p>{{ label() }}</p>
+<div
+  [ngStyle]="{
+    width: isFitContent() ? 'fit-content' : '100%'
+  }"
+  class="container"
+>
+  <a>{{ label() }}</a>
 </div>

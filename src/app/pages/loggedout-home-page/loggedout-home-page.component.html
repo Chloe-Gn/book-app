@@ -5,13 +5,14 @@
 <app-spacer [height]="'24px'"></app-spacer>
 <p>
   L&apos;application pour créer vos listes de lecture et garder en mémoire vos
-  appréciations.
+  avis.
 </p>
 <app-spacer [height]="'64px'"></app-spacer>
 <div class="padding-sides">
   <app-primary-button
     [buttonLabel]="'Se connecter'"
     [width]="'100%'"
+    (click)="navigateTo('log-in')"
   ></app-primary-button>
   <app-spacer [height]="'16px'"></app-spacer>
   <app-secondary-button [label]="'S\'inscrire'" width="'100%'">

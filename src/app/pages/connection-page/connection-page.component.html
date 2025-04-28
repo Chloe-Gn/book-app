@@ -1,0 +1,17 @@
+<app-top-bar [title]="'Connexion'">
+  <app-top-bar-back-button
+    iconLeft
+    (click)="goBack()"
+  ></app-top-bar-back-button>
+</app-top-bar>
+<div class="container">
+  <app-spacer [height]="'120px'"></app-spacer>
+  <app-spacer [height]="'96px'"></app-spacer>
+  <h1>BookApp</h1>
+  <app-spacer [height]="'48px'"></app-spacer>
+  <app-login-form></app-login-form>
+  <app-spacer [height]="'48px'"></app-spacer>
+  <div class="link-button-container">
+    <app-link-button [label]="'Mot de passe oublié ?'"></app-link-button>
+  </div>
+</div>

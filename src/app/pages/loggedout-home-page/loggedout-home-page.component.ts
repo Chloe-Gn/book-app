@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { SpacerComponent } from '../../components/spacer/spacer.component';
 import { PrimaryButtonComponent } from '../../components/buttons/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from '../../components/buttons/secondary-button/secondary-button.component';
+import { NavigationService } from '../../services/navigationService/navigation.service';
 
 @Component({
   selector: 'app-loggedout-home-page',
@@ -9,4 +10,10 @@ import { SecondaryButtonComponent } from '../../components/buttons/secondary-but
   templateUrl: './loggedout-home-page.component.html',
   styleUrl: './loggedout-home-page.component.scss',
 })
-export class LoggedoutHomePageComponent {}
+export class LoggedoutHomePageComponent {
+  private navigationService = inject(NavigationService);
+
+  navigateTo(path: string) {
+    this.navigationService.navigate(path);
+  }
+}

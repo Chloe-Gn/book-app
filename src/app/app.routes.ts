@@ -6,6 +6,8 @@ import { MyListPageComponent } from './pages/my-list-page/my-list-page.component
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { BookPageComponent } from './pages/book-page/book-page.component';
 import { LoggedoutHomePageComponent } from './pages/loggedout-home-page/loggedout-home-page.component';
+import { ConnectionPageComponent } from './pages/connection-page/connection-page.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 //The order of routes is important because
 //the Router uses a first-match wins strategy when matching routes
@@ -17,6 +19,14 @@ export const routes: Routes = [
   {
     path: 'ma-liste',
     component: MyListPageComponent,
+  },
+  {
+    path: 'log-in',
+    component: ConnectionPageComponent,
+  },
+  {
+    path: 'sign-up',
+    component: SignupPageComponent,
   },
   {
     path: 'bibliotheque/:category',

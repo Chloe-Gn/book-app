@@ -1,0 +1,60 @@
+<form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+  <div class="input-fields">
+    <div>
+      <label
+        [ngStyle]="{ display: isUserNameActive ? 'block' : 'none' }"
+        class="styling"
+        for="user-name"
+        >Nom d'utilisateur
+      </label>
+      <input
+        id="user-name"
+        type="text"
+        formControlName="userName"
+        placeholder="Nom d'utilisateur"
+      />
+      @if (isUserNameMissing){
+      <div class="error-msg-field">Le nom d'utilisateur est requis.</div>
+      } @if (isUserNameTooShort){
+      <div class="error-msg-field">
+        Le nom d'utilisateur doit contenir au moins 3 caractères.
+      </div>
+      }
+    </div>
+    <div>
+      <label
+        [ngStyle]="{ display: isPasswordActive ? 'block' : 'none' }"
+        class="styling"
+        for="password"
+        >Mot de passe</label
+      >
+      <input
+        type="password"
+        type="password"
+        formControlName="password"
+        placeholder="Mot de passe"
+      />
+      @if(isPasswordMissing){
+      <div class="error-msg-field">Le mot de passe est requis.</div>
+      } @if(isPasswordTooShort){
+      <div class="error-msg-field">
+        Le mot de passe doit contenir au moins 8 caractères.
+      </div>
+      }
+    </div>
+  </div>
+  @if (areUserNameAndPasswordMissing){
+  <div class="error-msg-field-block">
+    Le nom d'utilisateur et le mot de passe sont requis.
+  </div>
+  }
+
+  <app-spacer [height]="'64px'"></app-spacer>
+  <button
+    [ngClass]="isButtonClicked() ? 'button-clicked' : 'button-default'"
+    type="submit"
+    (ngSubmit)="onSubmit()"
+  >
+    Se connecter
+  </button>
+</form>

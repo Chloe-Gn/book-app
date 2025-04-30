@@ -3,11 +3,12 @@
 
 .container {
   background-color: $color-grey-100;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: $height-400;
+  padding-bottom: $height-400;
   position: fixed;
+  top: 0rem;
   z-index: 1000;
-  max-width: 414px;
+  max-width: $device-width;
 }
 
 .content-box {
@@ -16,7 +17,7 @@
 
 .navigation-left {
   justify-content: flex-start;
-  padding-left: 12px;
+  padding-left: $width-075;
 }
 
 .navigation-center {
@@ -25,8 +26,8 @@
   color: $color-grey-900;
   text-align: center;
   font-family: "Inter regular";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
 }
 
 .navigation-left,

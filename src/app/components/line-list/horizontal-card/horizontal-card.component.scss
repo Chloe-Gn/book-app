@@ -5,16 +5,16 @@
 :host {
   display: flex;
   justify-content: space-between;
-  height: 256px;
+  height: fit-content;
 }
 
 .side {
-  width: calc(50% - 6px);
+  width: calc(50% - $width-050);
 }
 
 .left {
   background-color: $color-primary-200;
-  border-radius: 16px;
+  border-radius: $border-radius-400;
 }
 
 .right {
@@ -23,7 +23,7 @@
 }
 
 .image {
-  height: 176px;
+  height: $height-800;
 }
 
 .book-cover-container {
@@ -31,30 +31,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(256px - 48px);
+  height: calc($height-900 - $height-300);
 }
 
 .publication-date-container {
   font-family: "Inter medium";
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $font-size-200;
+  line-height: $font-line-height-200;
   color: $color-primary-200;
   background-color: $color-primary-800;
-  height: 48px;
+  height: $height-400;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 0rem 0rem $border-radius-400 $border-radius-400;
 }
 
 .book-title {
   font-family: "Inter semibold";
-  font-size: 18px;
-  line-height: 25px;
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
   color: $color-grey-900;
-  min-height: 25px;
-  max-height: 176px;
+  min-height: $font-line-height-400;
+  max-height: calc($font-line-height-400 * 7);
   line-clamp: 3;
 
   hyphens: manual;
@@ -70,8 +70,8 @@
 
 .authorName {
   font-family: "Inter regular";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
   color: $color-grey-900;
 
   hyphens: auto;
@@ -88,10 +88,10 @@
 
 .tertiary-button {
   font-family: "Inter semibold";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
   color: $color-grey-900;
   cursor: pointer;
   position: absolute;
-  bottom: 16px;
+  bottom: $height-100;
 }

@@ -14,13 +14,17 @@
 .tile {
   display: flex;
   justify-content: center;
-  border-radius: 16px;
-  height: 96px;
+  border-radius: $border-radius-400;
+  height: $height-600;
   align-items: center;
   flex-grow: 1;
-  width: calc(50% - 12px);
+  width: calc(50% - $width-075);
 }
 
 .tile {
-  padding: 8px 12px 8px 12px;
+  padding: $height-050 $width-075;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  color: $color-primary-700;
+  text-align: center;
 }

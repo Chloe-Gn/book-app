@@ -6,14 +6,14 @@
 }
 
 .container {
-  padding: 20px 28px;
+  padding: $height-100 $width-300;
   color: $color-primary-900;
   background-color: $color-primary-100;
   font-family: "Inter medium";
-  font-size: 18px;
-  line-height: 25px;
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
   box-shadow: inset 0 0 0 1px $color-primary-800;
-  border-radius: 50px;
+  border-radius: $border-radius-700;
   text-align: center;
 }
 

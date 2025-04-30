@@ -1,20 +1,21 @@
-<div class="image-box">
-  <img [src]="'assets/illustrations/bookapp-homepage-nooutline.svg'" alt="" />
-</div>
-<h1>BookApp</h1>
-<app-spacer [height]="'24px'"></app-spacer>
-<p>
-  L&apos;application pour créer vos listes de lecture et garder en mémoire vos
-  avis.
-</p>
-<app-spacer [height]="'64px'"></app-spacer>
-<div class="padding-sides">
+<div class="body-side-padding">
+  <div class="image-box">
+    <img [src]="'assets/illustrations/bookapp-homepage-nooutline.svg'" alt="" />
+  </div>
+  <h1>BookApp</h1>
+  <app-spacer [height]="'1.5rem'"></app-spacer>
+  <p>
+    L&apos;application pour créer vos listes de lecture et garder en mémoire vos
+    avis.
+  </p>
+  <app-spacer [height]="'4rem'"></app-spacer>
+
   <app-primary-button
     [buttonLabel]="'Se connecter'"
     [width]="'100%'"
     (click)="navigateTo('log-in')"
   ></app-primary-button>
-  <app-spacer [height]="'16px'"></app-spacer>
+  <app-spacer [height]="'1rem'"></app-spacer>
   <app-secondary-button [label]="'S\'inscrire'" width="'100%'">
   </app-secondary-button>
 </div>

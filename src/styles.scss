@@ -19,6 +19,33 @@ input[type="search"]::-ms-clear {
   display: none;
 }
 
+//device width
+
+$mobile-width-900: 43.75rem; //Android medium
+$mobile-width-800: 27.5rem; //iPhone 16pro max
+$mobile-width-700: 26.875rem; //iPhone 16 plus
+$mobile-width-600: 26.75rem; //iPhone 14 plus
+$mobile-width-500: 25.75rem; //Android compact
+$mobile-width-400: 24.5625rem; //iPhone 16
+$mobile-width-300: 24.375rem; //iPhone 13 & 14
+$mobile-width-200: 23.4375rem; //iPhone 13 mini
+$mobile-width-100: 20rem; //iPhone SE
+
+/* IMPORTANT: Keep that declaration after the declaration cited as value */
+$device-width: $mobile-width-400;
+
+/*
+$desktop-width-900: ;
+$desktop-width-800: ;
+$desktop-width-700: ;
+$desktop-width-600: ;
+$desktop-width-500: ;
+$desktop-width-400: ;
+$desktop-width-300: ;
+$desktop-width-200: ;
+$desktop-width-100: ;
+*/
+
 // colors
 $color-primary-100: #f2fdfd;
 $color-primary-200: #c7f4f4;
@@ -62,23 +89,23 @@ $color-red-100: #fff5f7;
 
 //side-padding:
 
-$side-padding-small: 0px 24px;
-$side-paddig-medium: 0px 48px;
+$side-padding-small: 0rem 1.5rem;
+$side-paddig-medium: 0rem 3rem;
 
 body {
   font-family: sans-serif;
-  min-width: 320px;
-  max-width: 414px;
+  min-width: 20rem;
+  max-width: 25.875rem;
   margin: auto;
   background-color: $color-grey-100;
   overflow: auto;
-  margin: 0;
-  padding: 0;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0rem;
 }
 
 input,
@@ -90,6 +117,50 @@ select {
   line-height: inherit;
 }
 
+$border-radius-900: 6rem;
+$border-radius-800: 4rem;
+$border-radius-700: 3rem;
+$border-radius-600: 2rem;
+$border-radius-500: 1.5rem;
+$border-radius-400: 1rem;
+$border-radius-300: 0.75rem;
+$border-radius-200: 0.5rem;
+$border-radius-100: 0.25rem;
+
+$width-1200: 40rem;
+$width-1100: 32rem;
+$width-1000: 24rem;
+$width-900: 16rem;
+$width-800: 12rem;
+$width-700: 8rem;
+$width-600: 6rem;
+$width-500: 4rem;
+$width-400: 3rem;
+$width-350-icon-special: 2.5rem;
+$width-300: 2rem;
+$width-200: 1.5rem;
+$width-100: 1rem;
+$width-075: 0.75rem;
+$width-050: 0.5rem;
+$width-025: 0.25rem;
+
+$height-1200: 40rem;
+$height-1100: 32rem;
+$height-1000: 24rem;
+$height-900: 16rem;
+$height-800: 12rem;
+$height-700: 8rem;
+$height-600: 6rem;
+$height-500: 4rem;
+$height-400: 3rem;
+$height-350-icon-special: 2.5rem;
+$height-300: 2rem;
+$height-200: 1.5rem;
+$height-100: 1rem;
+$height-075: 0.75rem;
+$height-050: 0.5rem;
+$height-025: 0.25rem;
+
 // font face
 
 $sans-serif: "sans-serif";
@@ -99,6 +170,30 @@ $font-medium: "assets/fonts/inter-medium.woff2";
 $font-semibold: "assets/fonts/inter-semibold.woff2";
 $font-bold: "assets/fonts/inter-bold.woff2";
 $font-black: "assets/fonts/inter-black.woff2";
+
+//fonts
+
+$font-size-1000: 4.5rem;
+$font-size-900: 3.75rem;
+$font-size-800: 3rem;
+$font-size-700: 2.25rem;
+$font-size-600: 1.875rem;
+$font-size-500: 1.5rem;
+$font-size-400: 1.125rem;
+$font-size-300: 1rem;
+$font-size-200: 0.875rem;
+$font-size-100: 0.75rem;
+
+$font-line-height-1000: 4.5rem;
+$font-line-height-900: 3.875rem;
+$font-line-height-800: 3.625rem;
+$font-line-height-700: 2.6875;
+$font-line-height-600: 2.25rem;
+$font-line-height-500: 1.6875rem;
+$font-line-height-400: 1.5625rem;
+$font-line-height-300: 1.5rem;
+$font-line-height-200: 1.3125rem;
+$font-line-height-100: 1.25rem;
 
 @font-face {
   font-family: "Inter regular";
@@ -129,5 +224,3 @@ $font-black: "assets/fonts/inter-black.woff2";
   src: url(#{$font-black}) format("woff2");
   font-display: swap;
 }
-
-// spacing

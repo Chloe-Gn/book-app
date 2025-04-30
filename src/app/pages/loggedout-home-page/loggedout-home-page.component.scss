@@ -6,28 +6,30 @@
 }
 
 .image-box {
-  padding: 48px 24px 32px 24px;
+  padding: $height-400 $width-200 $height-300 $width-200;
 }
 
 h1 {
-  padding: 0px 24px;
+  padding: 0rem $width-200;
   color: $color-primary-500;
   font-family: "Inter black";
-  font-size: 48px;
-  line-height: 58px;
+  font-size: $font-size-800;
+  line-height: $font-line-height-800;
   letter-spacing: -4%;
   text-align: center;
 }
 
 p {
-  padding: 0px 24px;
+  padding: 0rem $height-200;
   font-family: "Inter regular";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
   text-align: center;
   color: $color-grey-900;
 }
 
-.padding-sides {
-  padding: 0px 24px;
+.body-side-padding {
+  padding-left: $width-200;
+  padding-right: $width-200;
+  max-width: $device-width;
 }

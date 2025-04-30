@@ -3,14 +3,16 @@
 h1 {
   color: $color-primary-500;
   font-family: "Inter black";
-  font-size: 48px;
-  line-height: 58px;
+  font-size: $font-size-800;
+  line-height: $font-line-height-800;
   letter-spacing: -4%;
   text-align: center;
 }
 
-.container {
-  padding: $side-padding-small;
+.body-side-padding {
+  padding-left: $width-200;
+  padding-right: $width-200;
+  max-width: $device-width;
 }
 
 .link-button-container {

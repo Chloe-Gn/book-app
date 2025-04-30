@@ -1,10 +1,8 @@
 @import "../../../../styles.scss";
 
 .container {
-  padding-left: 24px;
-  padding-right: 24px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  padding-bottom: 124px;
+  gap: $height-075;
+  padding-bottom: $height-700;
 }

@@ -13,13 +13,13 @@
 </div>
 <div class="right side">
   <h2 class="book-title">{{ bookTitle | truncate : 50 }}</h2>
-  <app-spacer [height]="'8px'"></app-spacer>
+  <app-spacer [height]="'0.5rem'"></app-spacer>
   <app-star-rating-16px [rating]="averageRating"></app-star-rating-16px>
-  <app-spacer [height]="'16px'"></app-spacer>
+  <app-spacer [height]="'1rem'"></app-spacer>
   <p class="authorName">{{ authorName | truncate : 45 }}</p>
-  <app-spacer [height]="'12px'"></app-spacer>
+  <app-spacer [height]="'0.75rem'"></app-spacer>
   <app-small-chips [chips]="categories"></app-small-chips>
-  <app-spacer [height]="'12px'"></app-spacer>
+  <app-spacer [height]="'0.75rem'"></app-spacer>
   <!-- <button class="tertiary-button">En savoir plus ></button> -->
   <app-tertiary-button [object]="book()"></app-tertiary-button>
 </div>

@@ -1,10 +1,12 @@
 <app-top-bar [title]="title"></app-top-bar>
-<app-spacer [height]="'120px'"></app-spacer>
-<app-tile-list [tileObjects]="tileObjects">
-  @for (tileObject of tileObjects; track tileObject.id) {
-  <app-tile-list-plain-tile
-    [tileObject]="tileObject"
-  ></app-tile-list-plain-tile>
-  }
-</app-tile-list>
+<app-spacer [height]="'8rem'"></app-spacer>
+<div class="body-side-padding">
+  <app-tile-list [tileObjects]="tileObjects">
+    @for (tileObject of tileObjects; track tileObject.id) {
+    <app-tile-list-plain-tile
+      [tileObject]="tileObject"
+    ></app-tile-list-plain-tile>
+    }
+  </app-tile-list>
+</div>
 <app-nav-bar></app-nav-bar>

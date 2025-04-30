@@ -1,0 +1,7 @@
+@import "../../../styles.scss";
+
+.body-side-padding {
+  padding-left: $width-200;
+  padding-right: $width-200;
+  max-width: $device-width;
+}

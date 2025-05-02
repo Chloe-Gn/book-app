@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 // reset
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 *,
 *::before,
 *::after {

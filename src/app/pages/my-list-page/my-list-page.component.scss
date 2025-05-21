@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.container {
+  background: url("/assets/illustrations/purple-book.svg") left -22px top 24px no-repeat,
+    url("/assets/illustrations/purple-book.svg") left 304px top -14px / 110px no-repeat,
+    url("/assets/illustrations/purple-book.svg") left 263px top 150px no-repeat,
+    $color-accent-700;
+  min-height: 100vh;
+  width: $device-width;
+}

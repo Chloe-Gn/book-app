@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container" [ngStyle]="{ 'background-color': bgColor() }">
   <div class="content-box">
     <div class="navigation-left">
       <ng-content select="[iconLeft]"></ng-content>
     </div>
-    <div class="navigation-center">
+    <div
+      class="navigation-center"
+      [ngStyle]="{ color: titleColor(), 'font-family': fontFamily() }"
+    >
       <div>{{ title() | uppercase }}</div>
     </div>
     <div class="navigation-right">

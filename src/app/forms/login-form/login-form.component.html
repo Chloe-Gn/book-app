@@ -2,7 +2,9 @@
   <div class="input-fields">
     <div>
       <label
-        [ngStyle]="{ display: isUserNameActive ? 'block' : 'none' }"
+        [ngStyle]="{
+          opacity: isUserNameActive ? '1' : '0',
+        }"
         class="styling"
         for="user-name"
         >Nom d'utilisateur
@@ -23,7 +25,9 @@
     </div>
     <div>
       <label
-        [ngStyle]="{ display: isPasswordActive ? 'block' : 'none' }"
+        [ngStyle]="{
+          opacity: isPasswordActive ? '1' : '0',
+        }"
         class="styling"
         for="password"
         >Mot de passe</label

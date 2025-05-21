@@ -1,24 +1,16 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  DoCheck,
-  inject,
-  input,
-  InputSignal,
-  OnChanges,
-  OnInit,
-  Signal,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, input } from '@angular/core';
 import { UpperCasePipe } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-top-bar',
-  imports: [UpperCasePipe],
+  imports: [NgStyle, UpperCasePipe],
   templateUrl: './top-bar.component.html',
   styleUrl: './top-bar.component.scss',
 })
 export class TopBarComponent {
   title = input<string>();
+  bgColor = input<string>();
+  titleColor = input<string>();
+  fontFamily = input<string>();
 }

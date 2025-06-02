@@ -1,0 +1,215 @@
+@use "styles" as *;
+
+$p-line-height-offset: calc($font-line-height-200 / 2);
+
+:host {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: calc(50% - 0.375rem) calc(50% - 0.375rem);
+  column-gap: 0.75rem;
+}
+
+.book-cover-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  height: $height-900;
+
+  border-radius: 1rem;
+  overflow: hidden;
+  border: solid 1px $color-grey-300;
+}
+
+.image {
+  height: calc($height-900 - $height-400);
+  object-fit: cover;
+  object-position: top center;
+  width: auto;
+}
+
+.publication-date {
+  font-family: "Inter regular";
+  position: absolute;
+  margin-block: 0;
+  bottom: 0;
+  background-color: $color-primary-800;
+  color: $color-primary-200;
+  font-size: $font-size-200;
+  line-height: $font-line-height-200;
+  width: 100%;
+  text-align: center;
+  padding-bottom: calc(1.5rem - $p-line-height-offset);
+  padding-top: calc(1.5rem - $p-line-height-offset);
+}
+
+.book-info-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: relative;
+
+  height: 100%;
+
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+h2 {
+  font-family: "Inter semibold";
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
+  margin-block: 0;
+  text-align: left;
+  line-clamp: 3;
+
+  hyphens: manual;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author-name {
+  font-family: "Inter regular";
+  margin-block: 0;
+  text-align: left;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  margin-top: $height-075;
+  margin-bottom: 0.75rem;
+
+  line-clamp: 2;
+
+  hyphens: manual;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  font-family: "Inter semibold";
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  text-align: left;
+  margin-top: $height-100;
+  bottom: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+//constant - not dependable on state
+
+/*
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.side {
+  width: calc(50% - $width-050);
+}
+
+.left {
+  background-color: $color-primary-200;
+  border-radius: $border-radius-400;
+}
+
+.right {
+  background-color: $color-grey-100;
+  position: relative;
+}
+
+.image {
+  height: $height-800;
+}
+
+.book-cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc($height-900 - $height-300);
+}
+
+.publication-date-container {
+  font-family: "Inter medium";
+  font-size: $font-size-200;
+  line-height: $font-line-height-200;
+  color: $color-primary-200;
+  background-color: $color-primary-800;
+  height: $height-400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem $border-radius-400 $border-radius-400;
+}
+
+.book-title {
+  font-family: "Inter semibold";
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
+  color: $color-grey-900;
+  min-height: $font-line-height-400;
+  max-height: calc($font-line-height-400 * 7);
+  line-clamp: 3;
+
+  hyphens: manual;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.authorName {
+  font-family: "Inter regular";
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  color: $color-grey-900;
+
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tertiary-button {
+  font-family: "Inter semibold";
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  color: $color-grey-900;
+  cursor: pointer;
+  position: absolute;
+  bottom: $height-100;
+}
+
+*/

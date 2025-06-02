@@ -1,10 +1,77 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
-.container {
-  background: url("/assets/illustrations/purple-book.svg") left -22px top 24px no-repeat,
-    url("/assets/illustrations/purple-book.svg") left 304px top -14px / 110px no-repeat,
-    url("/assets/illustrations/purple-book.svg") left 263px top 150px no-repeat,
+:host {
+  display: block;
+  max-width: $device-width;
+  background: url("/assets/illustrations/purple-book.svg") left -1.5rem top 1.5rem
+      no-repeat,
+    url("/assets/illustrations/purple-book.svg") left 18rem top -1rem / 8rem no-repeat,
+    url("/assets/illustrations/purple-book.svg") left 11rem top 8rem no-repeat,
     $color-accent-700;
   min-height: 100vh;
   width: $device-width;
+}
+
+.main-content {
+  margin-top: 9rem;
+  background-color: $color-grey-100;
+  position: relative;
+  height: 800px;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 12rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: -6rem;
+  left: calc(50% - 6rem);
+  overflow: hidden;
+  background-color: $color-grey-100;
+  border: $color-grey-100 solid 0.5rem;
+}
+
+h2 {
+  padding-top: calc(6rem + 1.5rem);
+  font-family: "Inter Semibold";
+  font-size: $font-size-500;
+  line-height: $font-line-height-500;
+}
+
+.main-content p {
+  display: inline-block;
+  font-family: "Inter regular";
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  color: $color-grey-600;
+  margin: $height-200 $width-075 $height-500 $width-075;
+}
+
+/*
+.dummy-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $height-075;
+  padding-bottom: $height-700;
+  background-color: $color-grey-100;
+}
+*/
+
+.dummy-list-container {
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, min-content);
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+}
+
+.temp-tile {
+  width: 100%;
+  height: 8rem;
+  background-color: $color-accent-900;
 }

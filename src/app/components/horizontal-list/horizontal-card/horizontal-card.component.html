@@ -1,3 +1,29 @@
+<div class="book-cover-container">
+  <app-like-icon-40px></app-like-icon-40px>
+  <img
+    class="image"
+    [src]="bookImage()"
+    alt="Image de couverture du livre L'Histoire sans fin"
+  />
+  <p class="publication-date">
+    Publié en {{ book()?.firstPublished | date : "Y" }}
+  </p>
+</div>
+<div class="book-info-container">
+  <h2>{{ book()?.title }}</h2>
+  <app-star-rating-16px
+    [marginTop]="'0.5rem'"
+    [rating]="book()?.averageRating"
+  ></app-star-rating-16px>
+  <p class="author-name">{{ book()?.authorName }}</p>
+  <app-small-chips [chips]="categories"></app-small-chips>
+  <app-tertiary-button [object]="book()">lalala</app-tertiary-button>
+  <!-- <a class="button" href="/">En savoir plus ></a> -->
+</div>
+
+<!--
+
+
 <div class="left side">
   <app-like-icon-40px></app-like-icon-40px>
   <div class="book-cover-container">
@@ -20,6 +46,7 @@
   <app-spacer [height]="'0.75rem'"></app-spacer>
   <app-small-chips [chips]="categories"></app-small-chips>
   <app-spacer [height]="'0.75rem'"></app-spacer>
-  <!-- <button class="tertiary-button">En savoir plus ></button> -->
+<button class="tertiary-button">En savoir plus ></button> 
   <app-tertiary-button [object]="book()"></app-tertiary-button>
 </div>
+-->

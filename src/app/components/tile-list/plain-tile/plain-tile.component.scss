@@ -1,8 +1,11 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
 
 :host {
   background-color: $color-primary-200;
   color: $color-primary-700;
+  border-radius: $border-radius-400;
+  display: flex;
+  justify-content: center;
 }
 
 :host:hover {
@@ -10,21 +13,13 @@
   background-color: $color-primary-100;
 }
 
-:host,
 .tile {
+  min-height: $height-600;
   display: flex;
-  justify-content: center;
-  border-radius: $border-radius-400;
-  height: $height-600;
   align-items: center;
-  flex-grow: 1;
-  width: calc(50% - $width-075);
-}
 
-.tile {
   padding: $height-050 $width-075;
   font-size: $font-size-300;
   line-height: $font-line-height-300;
-  color: $color-primary-700;
   text-align: center;
 }

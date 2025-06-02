@@ -1,0 +1,6 @@
+@use "styles" as *;
+
+:host {
+  display: block;
+  max-width: $device-width;
+}

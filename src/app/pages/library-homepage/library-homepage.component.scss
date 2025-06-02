@@ -1,7 +1,16 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
-.body-side-padding {
-  padding-left: $width-200;
-  padding-right: $width-200;
+:host {
+  display: block;
+  padding: 0 1.5rem;
   max-width: $device-width;
+}
+
+.intro-text {
+  color: $color-grey-900;
+  font-family: "Inter regular";
+  text-align: center;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  margin-bottom: 2rem;
 }

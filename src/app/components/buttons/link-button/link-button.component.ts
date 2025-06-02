@@ -5,7 +5,15 @@ import { Component, input } from '@angular/core';
   imports: [],
   templateUrl: './link-button.component.html',
   styleUrl: './link-button.component.scss',
+  host: {
+    '[style.marginTop]': 'computedMarginTop',
+  },
 })
 export class LinkButtonComponent {
-  label = input<string>();
+  buttonLabel = input<string>();
+  marginTop = input<string>();
+
+  get computedMarginTop(): string | undefined {
+    return this.marginTop();
+  }
 }

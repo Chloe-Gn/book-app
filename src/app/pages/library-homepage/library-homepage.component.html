@@ -1,12 +1,23 @@
-<app-top-bar [title]="title"></app-top-bar>
-<app-spacer [height]="'8rem'"></app-spacer>
-<div class="body-side-padding">
-  <app-tile-list [tileObjects]="tileObjects">
-    @for (tileObject of tileObjects; track tileObject.id) {
-    <app-tile-list-plain-tile
-      [tileObject]="tileObject"
-    ></app-tile-list-plain-tile>
-    }
-  </app-tile-list>
-</div>
+<app-top-bar
+  [title]="title"
+  [position]="'relative'"
+  [marginBottom]="'3rem'"
+  [fontFamily]="'Inter regular'"
+  [titleColor]="'#222931'"
+></app-top-bar>
+
+<p class="intro-text">
+  Parcourez les rayons de la biblioth&egrave;que et trouvez vos prochaines
+  lectures.
+</p>
+
+<app-tile-list [tileObjects]="tileObjects" [rowGap]="'0.75rem'">
+  @for (tileObject of tileObjects; track $index) {
+  <app-plain-tile
+    [tileObject]="tileObject"
+    [styleObject]="getTileStyle($index, tileObjects.length)"
+  ></app-plain-tile>
+  }
+</app-tile-list>
+
 <app-nav-bar></app-nav-bar>

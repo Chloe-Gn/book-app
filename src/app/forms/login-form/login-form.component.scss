@@ -1,26 +1,19 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
 form {
   display: flex;
   flex-direction: column;
+  margin-top: 3em;
+  gap: $height-050;
 }
 
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  gap: $height-100;
-}
-
-label.styling {
-  opacity: 0;
-  max-height: 0;
+label {
   transition: opacity 0.2s ease-in;
   padding: 0rem $width-200;
   font-family: "Inter regular";
   font-size: $font-size-100;
   line-height: $font-line-height-100;
   color: $color-grey-600;
-  margin-bottom: $height-025;
 }
 
 input {
@@ -44,13 +37,14 @@ input.placeholder {
 }
 
 button {
-  color: $color-primary-100;
+  display: block;
   font-family: "Inter medium";
   font-size: $font-size-400;
-  line-height: $font-line-height-400;
+  line-height: $height-500;
+  color: $color-primary-100;
   text-align: center;
-  border-radius: $border-radius-700;
-  padding: $height-100 $width-300;
+  border-radius: $border-radius-800;
+  margin-top: $height-500;
 }
 
 .button-default {

@@ -1,24 +1,21 @@
-@import "../../../../styles.scss";
-
+@use "styles" as *;
 :host {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
-.container {
-  padding: $height-100 $width-300;
-  color: $color-primary-900;
-  background-color: $color-primary-100;
+.secondary-button {
+  display: block;
   font-family: "Inter medium";
   font-size: $font-size-400;
-  line-height: $font-line-height-400;
-  box-shadow: inset 0 0 0 1px $color-primary-800;
-  border-radius: $border-radius-700;
+  line-height: $height-500;
+  color: $color-primary-900;
+  background-color: $color-primary-100;
   text-align: center;
+  border: 1px solid $color-primary-800;
+  border-radius: $border-radius-800;
 }
 
-.container:hover {
+.secondary-button:hover {
   cursor: pointer;
-  color: $color-primary-700;
-  box-shadow: inset 0 0 0 1px $color-primary-600;
+  background-color: $color-primary-200;
 }

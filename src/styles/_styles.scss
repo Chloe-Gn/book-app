@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 // reset
 html {
   -webkit-font-smoothing: antialiased;
@@ -9,6 +7,12 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin-block: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -16,6 +20,12 @@ button,
 a {
   all: unset;
 }
+
+/*
+router-outlet {
+  display: contents; /* makes it invisible in layout flow
+}
+ */
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-moz-search-clear-button,
@@ -98,8 +108,6 @@ $side-paddig-medium: 0rem 3rem;
 
 body {
   font-family: sans-serif;
-  min-width: 20rem;
-  max-width: 25.875rem;
   background-color: $color-grey-100;
   overflow: auto;
   margin: 0rem;
@@ -168,11 +176,11 @@ $height-025: 0.25rem;
 
 $sans-serif: "sans-serif";
 
-$font-regular: "assets/fonts/inter-regular.woff2";
-$font-medium: "assets/fonts/inter-medium.woff2";
-$font-semibold: "assets/fonts/inter-semibold.woff2";
-$font-bold: "assets/fonts/inter-bold.woff2";
-$font-black: "assets/fonts/inter-black.woff2";
+$font-regular: "/assets/fonts/inter-regular.woff2";
+$font-medium: "/assets/fonts/inter-medium.woff2";
+$font-semibold: "/assets/fonts/inter-semibold.woff2";
+$font-bold: "/assets/fonts/inter-bold.woff2";
+$font-black: "/assets/fonts/inter-black.woff2";
 
 //fonts
 

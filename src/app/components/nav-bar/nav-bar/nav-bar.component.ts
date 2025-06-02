@@ -1,11 +1,11 @@
-import { Component, input, output } from '@angular/core';
-import { NavBarIconComponent } from '../nav-bar-icon/nav-bar-icon.component';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   ICON_AVATAR_LIST_OUTLINE,
   ICON_BOOK_OUTLINE,
   ICON_SEARCH,
 } from '../../../../assets/icons/svg-paths/svg-paths';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NavBarIconComponent } from '../nav-bar-icon/nav-bar-icon.component';
 
 @Component({
   selector: 'app-nav-bar',

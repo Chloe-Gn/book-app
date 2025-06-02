@@ -1,5 +1,5 @@
 // 2 etats : selectionné /non-selectionné
-@import "../../../../styles.scss";
+@use "styles" as *;
 
 //constant - not dependable on state
 .container {

@@ -1,4 +1,10 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
+
+:host {
+  position: relative;
+}
+
+$icon-half-width: calc($width-350-icon-special / 2);
 
 .heart-icon-path-outlined {
   fill: $color-primary-500;
@@ -9,9 +15,9 @@
 }
 
 .icon-container {
-  position: relative;
+  position: absolute;
   top: $height-100;
-  left: calc(100% - $width-400);
+  left: calc(100% - $width-350-icon-special - $width-100);
   width: fit-content;
   height: fit-content;
 }

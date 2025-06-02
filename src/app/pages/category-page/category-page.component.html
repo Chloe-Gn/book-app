@@ -1,17 +1,23 @@
-<app-top-bar [title]="title"
-  ><app-top-bar-back-button
-    iconLeft
-    (click)="goBack()"
-  ></app-top-bar-back-button
-></app-top-bar>
-<app-spacer [height]="'8rem'"></app-spacer>
-<app-filter-sort-bar [books]="books"></app-filter-sort-bar>
-<app-spacer [height]="'4rem'"></app-spacer>
-<div class="body-side-padding">
-  <app-horizontal-list-card>
-    @for (bookObject of books; track bookObject.id) {
-    <app-horizontal-card [book]="bookObject"> </app-horizontal-card>}
-  </app-horizontal-list-card>
-  <app-spacer [height]="'calc(3rem + 6rem)'"></app-spacer>
+<div class="sticky-wrapper">
+  <app-top-bar
+    [title]="title"
+    [fontFamily]="'Inter regular'"
+    [titleColor]="'#222931'"
+    [bgColor]="'#FCFCFD'"
+    [position]="'relative'"
+    [marginBottom]="'3rem'"
+    ><app-top-bar-back-button
+      iconLeft
+      (click)="goBack()"
+    ></app-top-bar-back-button
+  ></app-top-bar>
+  <app-filter-sort-bar [books]="books"></app-filter-sort-bar>
 </div>
+
+<app-horizontal-list [padding]="'0 1.5rem'">
+  @for (bookObject of books; track bookObject.id) {
+  <app-horizontal-card [book]="bookObject"> </app-horizontal-card>}
+</app-horizontal-list>
+<app-spacer [height]="'calc(3rem + 6rem)'"></app-spacer>
+
 <app-nav-bar></app-nav-bar>

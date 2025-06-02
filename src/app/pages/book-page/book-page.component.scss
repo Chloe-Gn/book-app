@@ -1,7 +1,6 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
 //constant - not dependable on state
-
 .body-side-padding {
   padding-left: $width-200;
   padding-right: $width-200;

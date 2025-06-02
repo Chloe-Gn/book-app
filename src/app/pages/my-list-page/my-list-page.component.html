@@ -1,9 +1,21 @@
-<div class="container">
-  <app-top-bar
-    [title]="title"
-    [bgColor]="'transparent'"
-    [fontFamily]="'Inter semibold'"
-    [titleColor]="'#fdf5ff'"
-  ></app-top-bar>
-  <app-nav-bar></app-nav-bar>
+<app-top-bar
+  [title]="title"
+  [bgColor]="'transparent'"
+  [fontFamily]="'Inter semibold'"
+  [titleColor]="'#fdf5ff'"
+  [position]="'relative'"
+></app-top-bar>
+<div class="main-content">
+  <img class="avatar" src="/assets/images/avatars/avatar-10.jpg" alt="" />
+  <h2>Clowee44</h2>
+  <p>34 Livres</p>
+  <p>36 Commentaires</p>
+  <app-big-chips
+    [chips]="['Tous', 'Humour', 'Noir', 'Historique']"
+  ></app-big-chips>
+  <app-tile-list [tileObjects]="books" [marginTop]="'3rem'">
+    @for (tileObject of books; track tileObject.id) {
+    <app-tile-with-cover [book]="tileObject"> </app-tile-with-cover>}
+  </app-tile-list>
 </div>
+<app-nav-bar></app-nav-bar>

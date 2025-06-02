@@ -1,4 +1,8 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
+
+:host {
+  display: block;
+}
 
 p {
   font-family: "Inter semibold";
@@ -6,6 +10,7 @@ p {
   line-height: $font-line-height-300;
   color: $color-primary-600;
   text-decoration: underline;
+  text-align: center;
 }
 
 p:hover {

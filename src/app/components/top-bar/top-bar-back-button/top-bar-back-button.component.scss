@@ -1,4 +1,13 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
+
+:host {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: $width-025;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
 
 .svg-selector {
   width: 100%;
@@ -7,26 +16,21 @@
   max-width: $width-200;
 }
 
+.icon-label {
+  font-family: "Inter regular";
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  color: $color-grey-900;
+}
+
 //changing
 
-.back-button-group {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: $width-025;
-}
-
-.back-button-group:hover {
+:host:hover {
   cursor: pointer;
-}
-
-.icon-path.active {
 }
 
 .icon-path.inactive {
   fill: $color-grey-700;
-}
-
-.icon-label.active {
 }
 
 .icon-label.inactive {

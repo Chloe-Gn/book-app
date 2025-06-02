@@ -1,3 +1,4 @@
+import { NgClass, NgStyle } from '@angular/common';
 import { Component, OnDestroy, OnInit, signal } from '@angular/core';
 import {
   FormControl,
@@ -5,14 +6,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { NgStyle } from '@angular/common';
-import { NgClass } from '@angular/common';
+import { PrimaryButtonComponent } from '../../components/buttons/primary-button/primary-button.component';
 import { Subscription } from 'rxjs';
-import { SpacerComponent } from '../../components/spacer/spacer.component';
 
 @Component({
   selector: 'app-login-form',
-  imports: [NgClass, NgStyle, ReactiveFormsModule, SpacerComponent],
+  imports: [NgClass, NgStyle, PrimaryButtonComponent, ReactiveFormsModule],
   templateUrl: './login-form.component.html',
   styleUrl: './login-form.component.scss',
 })
@@ -39,10 +38,8 @@ export class LogInFormComponent implements OnInit, OnDestroy {
   //Later : create a buildErrorMsg Service
 
   areUserNameAndPasswordMissing: boolean = false;
-  isPasswordMissing: boolean = false;
-  isUserNameMissing: boolean = false;
-  isUserNameTooShort: boolean = false;
-  isPasswordTooShort: boolean = false;
+  errorPassword: 'missing' | 'too short' | null = null;
+  errorUserName: 'missing' | 'too short' | null = null;
 
   ngOnInit() {
     this.userNameSubscription = this.userName?.valueChanges.subscribe(() =>
@@ -79,10 +76,8 @@ export class LogInFormComponent implements OnInit, OnDestroy {
 
     //resetting my booleans
     this.areUserNameAndPasswordMissing = false;
-    this.isPasswordMissing = false;
-    this.isUserNameMissing = false;
-    this.isUserNameTooShort = false;
-    this.isPasswordTooShort = false;
+    this.errorPassword = null;
+    this.errorUserName = null;
 
     if (
       this.userName?.hasError('required') &&
@@ -90,13 +85,13 @@ export class LogInFormComponent implements OnInit, OnDestroy {
     ) {
       this.areUserNameAndPasswordMissing = true;
     } else if (this.userName?.hasError('required')) {
-      this.isUserNameMissing = true;
+      this.errorUserName = 'missing';
     } else if (this.password?.hasError('required')) {
-      this.isPasswordMissing = true;
+      this.errorPassword = 'missing';
     } else if (this.userName && this.userName.hasError('minlength')) {
-      this.isUserNameTooShort = true;
+      this.errorUserName = 'too short';
     } else if (this.password && this.password.hasError('minlength')) {
-      this.isPasswordTooShort = true;
+      this.errorPassword = 'too short';
     }
   }
 

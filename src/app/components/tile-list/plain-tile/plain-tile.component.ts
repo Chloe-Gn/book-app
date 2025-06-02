@@ -1,28 +1,23 @@
-import {
-  Component,
-  inject,
-  input,
-  InputSignal,
-  OnInit,
-  output,
-  Signal,
-} from '@angular/core';
-import { TitleCasePipe } from '@angular/common';
+import { NgStyle, TitleCasePipe } from '@angular/common';
+import { Component, inject, input, OnInit } from '@angular/core';
 import { Category } from '../../../models/category.model';
-import { Router, RouterLink } from '@angular/router';
 import { NavigationService } from '../../../services/navigationService/navigation.service';
 
 @Component({
-  selector: 'app-tile-list-plain-tile',
-  imports: [TitleCasePipe],
-  templateUrl: './tile-list-plain-tile.component.html',
-  styleUrl: './tile-list-plain-tile.component.scss',
+  selector: 'app-plain-tile',
+  imports: [NgStyle, TitleCasePipe],
+  templateUrl: './plain-tile.component.html',
+  styleUrl: './plain-tile.component.scss',
+  host: {
+    '[style]': 'computedStyleObject',
+  },
 })
-export class TileListPlainTileComponent implements OnInit {
+export class PlainTileComponent implements OnInit {
   tileObject = input<Category | undefined>();
   tileName: string = '';
   category: string = '';
   categoryId: number = 0;
+  styleObject = input<object>();
 
   private navigationService = inject(NavigationService);
 
@@ -39,5 +34,9 @@ export class TileListPlainTileComponent implements OnInit {
     this.tileName = this.tileObject()!.categoryNamePlural;
     this.category = this.tileObject()!.path;
     this.categoryId = this.tileObject()!.id;
+  }
+
+  get computedStyleObject() {
+    return this.styleObject();
   }
 }

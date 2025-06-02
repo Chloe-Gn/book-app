@@ -4,7 +4,6 @@ import {
   Component,
   ElementRef,
   input,
-  signal,
   viewChild,
 } from '@angular/core';
 

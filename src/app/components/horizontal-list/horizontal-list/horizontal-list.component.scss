@@ -1,0 +1,10 @@
+@use "styles" as *;
+
+:host {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax($height-900, auto);
+  grid-auto-flow: dense;
+  row-gap: $height-400;
+  padding-bottom: $height-700;
+}

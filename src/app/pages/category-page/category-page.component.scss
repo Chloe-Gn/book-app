@@ -1,7 +1,15 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
-.body-side-padding {
-  padding-left: $width-200;
-  padding-right: $width-200;
+:host {
+  display: block;
   max-width: $device-width;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $color-grey-100;
+  z-index: 1000;
+  padding: 0 0.75rem;
 }

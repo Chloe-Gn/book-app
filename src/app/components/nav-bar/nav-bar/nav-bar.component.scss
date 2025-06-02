@@ -1,6 +1,6 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
 
-.container {
+:host {
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
@@ -9,6 +9,7 @@
   border-top: solid calc($height-025 / 8) $color-grey-300;
   position: fixed;
   z-index: 1000;
+  left: 0rem;
   bottom: 0rem;
   height: $height-600;
   max-width: $device-width;

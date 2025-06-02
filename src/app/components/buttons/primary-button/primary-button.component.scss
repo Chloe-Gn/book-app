@@ -1,25 +1,20 @@
-@import "../../../../styles.scss";
-
+@use "styles" as *;
 :host {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  background-color: $color-primary-500;
-  border-radius: $border-radius-700;
-  padding: $height-100 $width-300;
-  text-align: center;
+  display: block;
 }
 
 .primary-button {
+  display: block;
   font-family: "Inter medium";
   font-size: $font-size-400;
-  line-height: $font-line-height-400;
+  line-height: $height-500;
   color: $color-primary-100;
+  background-color: $color-primary-500;
+  text-align: center;
+  border-radius: $border-radius-800;
 }
 
-.container:hover {
-  background-color: $color-primary-400;
+.primary-button:hover {
   cursor: pointer;
+  background-color: $color-primary-400;
 }

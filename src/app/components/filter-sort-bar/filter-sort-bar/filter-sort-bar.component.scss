@@ -1,22 +1,15 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
+
 //constant
-
 //top position calculated with height coming from top bar
-.container {
-  height: $height-400;
-  padding-left: $width-200;
-  padding-right: $width-200;
+:host {
+  height: $height-200;
   background-color: $color-grey-100;
-  position: fixed;
-  top: calc($font-line-height-300 + $height-400 + $height-400);
-  z-index: 1000;
-  max-width: $device-width;
-}
-
-.content-box {
   display: flex;
   justify-content: space-between;
   font-family: "Inter regular";
   font-size: $font-size-300;
   line-height: $font-line-height-300;
+  padding: 0 0.75rem 2rem 0.75rem;
+  height: fit-content;
 }

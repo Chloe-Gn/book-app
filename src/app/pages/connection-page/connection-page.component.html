@@ -1,17 +1,17 @@
-<app-top-bar [title]="'Connexion'">
+<app-top-bar
+  [title]="'Connexion'"
+  [position]="'relative'"
+  [fontFamily]="'Inter regular'"
+  [titleColor]="'#222931'"
+>
   <app-top-bar-back-button
     iconLeft
-    (click)="goBack()"
+    (click)="navigate('/')"
   ></app-top-bar-back-button>
 </app-top-bar>
-<div class="body-side-padding">
-  <app-spacer [height]="'8rem'"></app-spacer>
-  <app-spacer [height]="'6rem'"></app-spacer>
-  <h1>BookApp</h1>
-  <app-spacer [height]="'3rem'"></app-spacer>
-  <app-login-form></app-login-form>
-  <app-spacer [height]="'3rem'"></app-spacer>
-  <div class="link-button-container">
-    <app-link-button [label]="'Mot de passe oublié ?'"></app-link-button>
-  </div>
-</div>
+<h1>BookApp</h1>
+<app-login-form></app-login-form>
+<app-link-button
+  [buttonLabel]="'Mot de passe oublié ?'"
+  [marginTop]="'3rem'"
+></app-link-button>

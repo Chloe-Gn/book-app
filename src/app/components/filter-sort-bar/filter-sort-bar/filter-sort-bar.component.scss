@@ -1,20 +1,15 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
+
 //constant
-
-.container {
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
+//top position calculated with height coming from top bar
+:host {
+  height: $height-200;
   background-color: $color-grey-100;
-  position: fixed;
-  z-index: 1000;
-  max-width: 414px;
-}
-
-.content-box {
   display: flex;
   justify-content: space-between;
   font-family: "Inter regular";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
+  padding: 0 0.75rem 2rem 0.75rem;
+  height: fit-content;
 }

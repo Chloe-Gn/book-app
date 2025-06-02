@@ -1,0 +1,42 @@
+@use "styles" as *;
+
+.chips-carousel {
+  position: relative;
+  display: flex;
+  gap: $width-075;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chips-carousel:hover {
+  cursor: pointer;
+}
+
+/* Hide scrollbars across all browsers */
+.chips-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.chips-carousel {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge - ms prefix means Microsoft */
+}
+
+.chip {
+  background-color: $color-primary-200;
+  color: $color-primary-900;
+  font-family: "Inter regular";
+  line-height: $font-line-height-400;
+  padding: $height-075 $width-100;
+  border-radius: $border-radius-500;
+  font-size: $font-size-400;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.chip:active {
+  color: $color-primary-100;
+  background-color: $color-primary-500;
+}

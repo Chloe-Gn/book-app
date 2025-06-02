@@ -1,13 +1,3 @@
-<div class="container">
-  <div class="content-box">
-    <div class="navigation-left">
-      <ng-content select="[iconLeft]"></ng-content>
-    </div>
-    <div class="navigation-center">
-      <div>{{ title() | uppercase }}</div>
-    </div>
-    <div class="navigation-right">
-      <ng-content select="[iconRight]"></ng-content>
-    </div>
-  </div>
-</div>
+<ng-content select="[iconLeft]"></ng-content>
+<div class="navigation-center">{{ title() | uppercase }}</div>
+<ng-content select="[iconRight]"></ng-content>

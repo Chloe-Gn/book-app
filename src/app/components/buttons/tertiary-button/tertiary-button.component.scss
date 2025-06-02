@@ -1,4 +1,4 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
 
 .tertiary-button {
   font-family: "Inter semibold";
@@ -7,5 +7,5 @@
   color: $color-grey-900;
   cursor: pointer;
   position: absolute;
-  bottom: 16px;
+  bottom: 1rem;
 }

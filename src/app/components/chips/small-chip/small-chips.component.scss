@@ -1,8 +1,8 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
 
 .chips-carousel {
   display: flex;
-  gap: 4px;
+  gap: $width-025;
   overflow-x: scroll;
   cursor: grab;
   scroll-behavior: smooth;
@@ -28,10 +28,10 @@
   background-color: $color-accent-200;
   color: $color-accent-900;
   font-family: "Inter regular";
-  line-height: 21px;
-  padding: 4px 10px;
-  border-radius: 18px;
-  font-size: 14px;
+  line-height: $font-line-height-200;
+  padding: $height-025 $height-075;
+  border-radius: $border-radius-500;
+  font-size: $font-size-200;
   white-space: nowrap;
   flex-shrink: 0;
 }

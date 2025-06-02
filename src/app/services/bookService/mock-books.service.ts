@@ -1,22 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Book } from '../../models/book.model';
-import { Category } from '../../models/category.model';
-import { seededShuffle } from '../../utils/shuffle-functions';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MockBooksService {
-  books: Book[] = [];
+  books = signal<Book[]>([]);
 
-  getBooks(id?: number) {
-    if (id !== undefined) {
-      let filteredBooks = this.allBooks.filter((book) =>
-        book.categories.some((cat) => cat.id === id)
+  getBooks(categId?: number): void {
+    if (categId !== undefined) {
+      let filteredBooks: Book[] = this.allBooks.filter((book) =>
+        book.categories.some((cat) => cat.id === categId)
       );
-      return filteredBooks;
+      this.books.set(filteredBooks);
     } else {
-      return this.allBooks;
+      this.books.set(this.allBooks);
     }
   }
 

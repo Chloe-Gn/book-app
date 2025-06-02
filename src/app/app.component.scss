@@ -1,5 +1,6 @@
-@import "../styles.scss";
+@use "styles" as *;
 
 body {
   background-color: $color-grey-100;
+  // max-width: $device-width;
 }

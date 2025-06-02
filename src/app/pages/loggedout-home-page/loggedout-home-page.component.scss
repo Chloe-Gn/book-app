@@ -1,33 +1,31 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
 :host {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  padding: 0 1.5rem;
+  max-width: $device-width;
 }
 
-.image-box {
-  padding: 48px 24px 32px 24px;
+img {
+  margin-top: 3rem;
+  width: 100%;
 }
 
 h1 {
-  padding: 0px 24px;
   color: $color-primary-500;
   font-family: "Inter black";
-  font-size: 48px;
-  line-height: 58px;
+  font-size: $font-size-800;
+  line-height: $font-line-height-800;
   letter-spacing: -4%;
   text-align: center;
+  margin-top: $height-300;
 }
 
 p {
-  padding: 0px 24px;
   font-family: "Inter regular";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
   text-align: center;
   color: $color-grey-900;
-}
-
-.padding-sides {
-  padding: 0px 24px;
+  margin-top: $height-200;
 }

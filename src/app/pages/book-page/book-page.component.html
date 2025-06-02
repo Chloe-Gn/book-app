@@ -2,31 +2,31 @@
   ><app-top-bar-close-button iconRight></app-top-bar-close-button
 ></app-top-bar>
 <div class="body-side-padding">
-  <app-spacer [height]="'120px'"></app-spacer>
+  <app-spacer [height]="'8rem'"></app-spacer>
   <app-book-cover-big [bookObject]="book"></app-book-cover-big>
-  <app-spacer [height]="'32px'"></app-spacer>
+  <app-spacer [height]="'2rem'"></app-spacer>
   <h1>{{ book?.title }}</h1>
-  <app-spacer [height]="'12px'"></app-spacer>
+  <app-spacer [height]="'0.75rem'"></app-spacer>
   <app-star-rating-24px [rating]="book?.averageRating"></app-star-rating-24px>
-  <app-spacer [height]="'24px'"></app-spacer>
+  <app-spacer [height]="'1.5rem'"></app-spacer>
   <p class="author-name">{{ book?.authorName }}</p>
-  <app-spacer [height]="'32px'"></app-spacer>
+  <app-spacer [height]="'2rem'"></app-spacer>
   <app-medium-chips [chips]="categoryChips"></app-medium-chips>
-  <app-spacer [height]="'32px'"></app-spacer>
+  <app-spacer [height]="'2rem'"></app-spacer>
   <app-section-title [content]="'Incipit'"></app-section-title>
-  <app-spacer [height]="'16px'"></app-spacer>
+  <app-spacer [height]="'1rem'"></app-spacer>
   <div class="incipit-text">{{ book?.incipit }}</div>
-  <app-spacer [height]="'48px'"></app-spacer>
+  <app-spacer [height]="'3rem'"></app-spacer>
   <app-primary-button [buttonLabel]="'Ajouter à ma liste'"></app-primary-button>
-  <app-spacer [height]="'64px'"></app-spacer>
+  <app-spacer [height]="'4rem'"></app-spacer>
   <app-section-title [content]="'Commentaires'"></app-section-title>
-  <app-spacer [height]="'32px'"></app-spacer>
+  <app-spacer [height]="'2rem'"></app-spacer>
   @for (comment of comments ; track comment.userId) {
   <app-comment [comment]="comment" class="comment-spacing"></app-comment>
   }
-  <app-spacer [height]="'48px'"></app-spacer>
+  <app-spacer [height]="'3rem'"></app-spacer>
   <app-secondary-button
-    [label]="'Voir plus de commentaires'"
+    [buttonLabel]="'Voir plus de commentaires'"
   ></app-secondary-button>
-  <app-spacer [height]="'124px'"></app-spacer>
+  <app-spacer [height]="'8rem'"></app-spacer>
 </div>

@@ -1,7 +1,7 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { SpacerComponent } from '../../components/spacer/spacer.component';
+import { Component, inject } from '@angular/core';
 import { PrimaryButtonComponent } from '../../components/buttons/primary-button/primary-button.component';
 import { SecondaryButtonComponent } from '../../components/buttons/secondary-button/secondary-button.component';
+import { SpacerComponent } from '../../components/spacer/spacer.component';
 import { NavigationService } from '../../services/navigationService/navigation.service';
 
 @Component({

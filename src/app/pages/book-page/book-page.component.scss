@@ -1,23 +1,23 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
 //constant - not dependable on state
-
 .body-side-padding {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: $width-200;
+  padding-right: $width-200;
+  max-width: $device-width;
 }
 
 h1 {
   font-family: "Inter bold";
   color: $color-grey-900;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: $font-size-600;
+  line-height: $font-line-height-600;
 }
 
 .author-name {
   font-family: "Inter regular";
-  font-size: 18px;
-  line-height: 25px;
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
   hyphens: manual;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -25,11 +25,11 @@ h1 {
 
 .incipit-text {
   font-family: "Inter regular";
-  font-size: 18px;
-  line-break: 27px;
+  font-size: $font-size-400;
+  line-height: $font-line-height-400;
   color: $color-grey-900;
 }
 
 .comment-spacing:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: $height-400;
 }

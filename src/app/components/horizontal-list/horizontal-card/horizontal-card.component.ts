@@ -1,17 +1,12 @@
-import { Component, input, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
+import { Component, computed, input, OnInit } from '@angular/core';
 import { Book } from '../../../models/book.model';
-import {
-  ICON_STAR_FILLED,
-  ICON_STAR_HALF_FILLED,
-  ICON_STAR_OUTLINED,
-} from '../../../../assets/icons/svg-paths/svg-paths';
 import { TruncatePipe } from '../../../pipes/truncate.pipe';
+import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-button.component';
+import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
+import { LikeIconComponent40px } from '../../icons-with-state/like-icon-40px/like-icon-40px.component';
 import { SpacerComponent } from '../../spacer/spacer.component';
 import { StarRatingComponent16px } from '../../star-rating/star-rating-16px/star-rating-16px.component';
-import { LikeIconComponent40px } from '../../icons-with-state/like-icon-40px/like-icon-40px.component';
-import { SmallChipsComponent } from '../../chips/small-chip/small-chips.component';
-import { TertiaryButtonComponent } from '../../buttons/tertiary-button/tertiary-button.component';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -29,7 +24,17 @@ import { DatePipe } from '@angular/common';
 })
 export class HorizontalCardComponent implements OnInit {
   book = input<Book | undefined>();
-  bookId: number = 0;
+  imageFolder: string = 'assets/images/';
+  bookImage = computed(() => this.imageFolder + this.book()?.bookImagePath);
+  categories: string[] = [];
+
+  ngOnInit(): void {
+    this.categories = this.book()!.categories.map(
+      (category) => category.categoryNameSingular
+    );
+  }
+}
+/* bookId: number = 0;
   bookImage: string = '';
   publicationDate: string = '';
   bookTitle: string = '';
@@ -54,3 +59,4 @@ export class HorizontalCardComponent implements OnInit {
     );
   }
 }
+*/

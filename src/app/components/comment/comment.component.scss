@@ -1,11 +1,11 @@
-@import "../../../styles.scss";
+@use "styles" as *;
 
 :host {
   display: flex;
-  gap: 20px;
+  gap: $width-200;
   justify-content: flex-start;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size-300;
+  line-height: $font-line-height-300;
 }
 
 .left {
@@ -17,19 +17,19 @@
 }
 
 .user-avatar {
-  height: 64px;
-  min-width: 64px;
-  border-radius: 50px;
+  height: $height-500;
+  min-width: $height-500;
+  border-radius: $border-radius-700;
 }
 
 h2 {
   font-family: "Inter medium";
   color: $color-grey-900;
-  margin-bottom: 8px;
+  margin-bottom: $height-050;
 }
 
 p {
-  margin: 12px 0px;
+  margin: $height-075 0rem;
   font-family: "Inter regular";
   color: $color-grey-900;
 }

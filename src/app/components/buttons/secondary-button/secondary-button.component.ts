@@ -6,12 +6,21 @@ import { Component, input } from '@angular/core';
   imports: [NgStyle],
   templateUrl: './secondary-button.component.html',
   styleUrl: './secondary-button.component.scss',
+  host: {
+    '[style.width]': 'computedWidth',
+    '[style.marginTop]': 'computedMarginTop',
+  },
 })
 export class SecondaryButtonComponent {
-  label = input<string>();
-  width = input<string | undefined>();
+  buttonLabel = input<string>();
+  width = input<string>();
+  marginTop = input<string>();
 
-  isFitContent(): boolean {
-    return this.width() === 'fit-content';
+  get computedWidth(): string | undefined {
+    return this.width();
+  }
+
+  get computedMarginTop(): string | undefined {
+    return this.marginTop();
   }
 }

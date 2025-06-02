@@ -1,15 +1,16 @@
-@import "../../../../styles.scss";
+@use "styles" as *;
 
-.container {
+:host {
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
-  padding: 10px 40px 10px 40px;
+  padding: $height-050 $width-300;
   width: 100%;
-  border-top: solid 0.5px $color-grey-300;
+  border-top: solid calc($height-025 / 8) $color-grey-300;
   position: fixed;
   z-index: 1000;
-  bottom: 0;
-  height: 96px;
-  max-width: 414px;
+  left: 0rem;
+  bottom: 0rem;
+  height: $height-600;
+  max-width: $device-width;
 }
